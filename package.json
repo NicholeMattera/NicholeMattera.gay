@@ -1,0 +1,22 @@
+{
+  "name": "stevenmattera",
+  "version": "1.0.0",
+  "description": "Web page for StevenMattera.com",
+  "main": "index.js",
+  "author": {
+    "name": "Steven Mattera",
+    "email": "me@stevenmattera.com",
+    "url": "https://stevenmattera.com"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "del": "^4.1.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-clean-css": "^4.0.0",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-inline-css": "^3.3.1",
+    "gulp-replace": "^1.0.0"
+  }
+}
