@@ -1,5 +1,5 @@
 const gulp = require('gulp'),
-    cleanCSS = require('gulp-clean-css'),
+    cleanCSS = require('clean-css'),
     replace = require('gulp-replace'),
     htmlmin = require('gulp-htmlmin'),
     del = require('del'),
@@ -7,16 +7,6 @@ const gulp = require('gulp'),
 
 function clean() {
     return del([ 'dist' ])
-}
-
-function styles() {
-    return gulp.src('src/style.css')
-        .pipe(cleanCSS())
-        .pipe(gulp.dest('dist'))
-}
-
-function styles2() {
-    return del('dist/style.css')
 }
 
 function images() {
@@ -28,11 +18,10 @@ function videos() {
 }
 
 function templates() {
+    var css = new cleanCSS({}).minify(fs.readFileSync('src/style.css', 'utf8'))
+
     return gulp.src('src/*.html')
-        .pipe(replace(/<link href="style.css"[^>]*>/, function(s) {
-            var style = fs.readFileSync('dist/style.css', 'utf8');
-            return '<style>\n' + style + '\n</style>';
-        }))
+        .pipe(replace(/<link href="style.css"[^>]*>/, () => `<style>${css.styles}</style>`))
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true
@@ -40,4 +29,4 @@ function templates() {
         .pipe(gulp.dest('dist'))
 }
 
-exports.default = gulp.series(clean, styles, gulp.parallel(images, videos, templates), styles2)
+exports.default = gulp.series(clean, gulp.parallel(images, videos, templates))

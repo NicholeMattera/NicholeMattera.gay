@@ -1,5 +1,5 @@
 /*
-    Copyright (c) 2019 Steven Mattera
+    Copyright (c) 2019 Nichole Mattera
 
     Permission to use, copy, modify, and/or distribute this software for any
     purpose with or without fee is hereby granted, provided that the above 
@@ -43,7 +43,7 @@ p {
     font-size: 28px;
 }
 
-video, .overlay, .container {
+video, .bg, .cont {
     position: absolute;
     top: 0;
     left: 0;
@@ -56,12 +56,12 @@ video {
     z-index: 0;
 }
 
-.overlay {
+.bg {
     background: transparent url('images/backgroundOverlay.png') repeat;
     z-index: 1;
 }
 
-.container {
+.cont {
     display: flex;
     z-index: 2;
     flex-direction: column;
@@ -69,11 +69,8 @@ video {
     align-items: center;
 }
 
-.social-icons {
-    margin: 0 0 20px;
-}
-
-.social-icons a, .resume {
+.btn {
+    display: block;
     border: 2px solid #FFF;
     border-radius: 25px;
     box-shadow: 2px 2px #000;
@@ -84,38 +81,51 @@ video {
     text-align: center;
 }
 
-.social-icons a {
-    display: inline-block;
+.btn:hover {
+    background: #FFF;
+    color: #000;
+    text-shadow: none;
+}
+
+.btn-ico {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-ico > svg {
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.soc {
+    display: flex;
+    justify-content: center;
+    margin: 0 0 20px;
+}
+
+.soc a {
     width: 50px;
     margin-right: 35px;
 }
 
-.social-icons a:last-child {
+.soc a:last-child {
     margin-right: 0;
 }
 
-.social-icons a:hover, .resume:hover {
-    background: #FFF;
-    text-shadow: none;
-}
-
-.twitter:hover {
+.tw:hover {
     color: #1DA1F2;
 }
 
-.linkedin:hover {
+.ln:hover {
     color: #0077B5;
 }
 
-.github:hover {
+.gh:hover {
     color: #333;
 }
 
-.resume {
-    display: block;
+.res {
     padding: 0 20px;
-}
-
-.resume:hover {
-    color: #000;
 }

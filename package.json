@@ -1,22 +1,21 @@
 {
-  "name": "stevenmattera",
+  "name": "nichole-mattera",
   "version": "1.0.0",
-  "description": "Web page for StevenMattera.com",
+  "description": "Web page for NicholeMattera.com",
   "main": "index.js",
   "author": {
-    "name": "Steven Mattera",
-    "email": "me@stevenmattera.com",
-    "url": "https://stevenmattera.com"
+    "name": "Nichole Mattera",
+    "email": "me@nicholemattera.com",
+    "url": "https://nicholemattera.com"
   },
   "license": "ISC",
-  "dependencies": {
-    "del": "^4.1.0"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "gulp": "^4.0.1",
-    "gulp-clean-css": "^4.0.0",
+    "gulp": "^4.0.2",
+    "clean-css": "^4.2.1",
     "gulp-htmlmin": "^5.0.1",
-    "gulp-inline-css": "^3.3.1",
-    "gulp-replace": "^1.0.0"
+    "gulp-inline-css": "^3.4.0",
+    "gulp-replace": "^1.0.0",
+    "del": "^5.1.0"
   }
 }
