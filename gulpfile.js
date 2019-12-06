@@ -9,6 +9,10 @@ function clean() {
     return del([ 'dist' ])
 }
 
+function favicon() {
+    return gulp.src('src/favicon.ico').pipe(gulp.dest('dist'))
+}
+
 function images() {
     return gulp.src('src/images/*').pipe(gulp.dest('dist/images'))
 }
@@ -29,4 +33,4 @@ function templates() {
         .pipe(gulp.dest('dist'))
 }
 
-exports.default = gulp.series(clean, gulp.parallel(images, videos, templates))
+exports.default = gulp.series(clean, gulp.parallel(favicon, images, videos, templates))
