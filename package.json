@@ -16,6 +16,7 @@
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
     "gulp-inline-css": "^3.5.0",
-    "gulp-replace": "^1.0.0"
+    "gulp-replace": "^1.0.0",
+    "kind-of": "^6.0.3"
   }
 }
