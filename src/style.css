@@ -39,7 +39,7 @@ h1 {
     text-align: center;
 }
 
-p {
+h2 {
     margin: 0 0 20px;
     font-size: 28px;
     text-align: center;
@@ -83,10 +83,11 @@ video {
     text-align: center;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     background: #FFF;
     color: #000;
     text-shadow: none;
+    outline: none;
 }
 
 .btn-ico {
@@ -112,19 +113,23 @@ video {
     margin-right: 35px;
 }
 
+.soc a:focus {
+    outline: none;
+}
+
 .soc a:last-child {
     margin-right: 0;
 }
 
-.tw:hover {
+.tw:hover, .tw:focus {
     color: #1DA1F2;
 }
 
-.ln:hover {
+.ln:hover, .ln:focus {
     color: #0077B5;
 }
 
-.gh:hover {
+.gh:hover, .gh:focus {
     color: #333;
 }
 
