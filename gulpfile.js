@@ -3,7 +3,8 @@ const gulp = require('gulp'),
     replace = require('gulp-replace'),
     htmlmin = require('gulp-htmlmin'),
     del = require('del'),
-    fs = require('fs')
+    fs = require('fs'),
+    browserSync = require('browser-sync').create()
 
 function clean() {
     return del([ 'dist' ])
@@ -33,4 +34,19 @@ function templates() {
         .pipe(gulp.dest('dist'))
 }
 
-exports.default = gulp.series(clean, gulp.parallel(favicon, images, videos, templates))
+function browsersync() {
+    browserSync.init({
+        server: "./dist"
+    });
+
+    gulp.watch("src/videos/*", videos).on('change', browserSync.reload);
+    gulp.watch("src/images/*", images).on('change', browserSync.reload);
+    gulp.watch("src/*.(css|html)", templates).on('change', browserSync.reload);
+}
+
+const build = gulp.series(clean, gulp.parallel(favicon, images, videos, templates))
+const serve = gulp.series(build, browsersync)
+
+exports.serve = serve
+
+exports.default = build

@@ -9,9 +9,18 @@
     "url": "https://nicholemattera.com"
   },
   "license": "ISC",
+  "scripts": {
+    "build": "gulp",
+    "serve": "gulp serve",
+    "e2e:local": "cypress open",
+    "e2e:prod": "CYPRESS_PRODUCTION=true cypress open",
+    "e2e": "concurrently -k \"npm:serve\" \"npm:e2e:local\""
+  },
   "dependencies": {},
   "devDependencies": {
+    "browser-sync": "^2.26.7",
     "clean-css": "^4.2.3",
+    "cypress": "^4.9.0",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
     "gulp-htmlmin": "^5.0.1",
