@@ -1,14 +1,13 @@
-    [Unit]
-    Description=Nichole Mattera
+[Unit]
+Description=Nichole Mattera
 
-    [Service]
-    Type=simple
-    Restart=always
-    RestartSec=5s
-    User=nicholemattera
-    WorkingDirectory=/path/to/nichole-mattera/
-    ExecStart=/path/to/nichole-mattera/app
+[Service]
+Type=simple
+Restart=always
+RestartSec=5s
+User=nicholemattera
+WorkingDirectory=/path/to/nichole-mattera/
+ExecStart=/path/to/nichole-mattera/app
 
-    [Install]
-    WantedBy=multi-user.target
-    
+[Install]
+WantedBy=multi-user.target
