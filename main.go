@@ -52,8 +52,10 @@ func main() {
 
         // For the month of June redirect all traffic to lgbt or gay TLD.
         if time.Now().Month() == 6 && (!strings.HasSuffix(req.Host, "lgbt") || !strings.HasSuffix(req.Host, "gay")) {
+            rand.Seed(time.Now().UnixNano())
+
             tld := "lgbt"
-            if rand.Intn(1) == 1 {
+            if rand.Intn(2) == 1 {
                 tld = "gay"
             }
 
