@@ -1,57 +1,62 @@
-<!--
-    Copyright (c) 2020 Nichole Mattera
-
-    Permission to use, copy, modify, and/or distribute this software for any
-    purpose with or without fee is hereby granted, provided that the above 
-    copyright notice and this permission notice appear in all copies.
-
-    THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
-    WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
-    MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
-    ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
-    WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
-    ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
-    OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
--->
-
 <!doctype html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-        <meta name="description" content="I'm a programmer making cool things." />
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <meta name="description" content="I'm a programmer making cool things.">
+
+        <meta property="og:title" content="Nichole Mattera">
+        <meta property="og:site_name" content="Nichole Mattera">
+        <meta property="og:url" content="https://nicholemattera.com">
+        <meta property="og:description" content="I'm a programmer making cool things.">
+
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Nichole Mattera">
+        <meta name="twitter:description" content="I'm a programmer making cool things.">
         
         <title>Nichole Mattera</title>
 
-        <link href="style.css" rel="stylesheet" />
+        <link rel="manifest" href="/manifest.json">
+        <link href="style.css" rel="stylesheet">
     </head>
     <body>
+{{ if .Pride }}
+        <video autoplay loop muted poster="images/prideBackground.jpg" src="videos/prideBackground.m4v"></video>
+{{ else }}
         <video autoplay loop muted poster="images/background.jpg" src="videos/background.m4v"></video>
+{{ end }}
+
         <div class="bg"></div>
+
         <div class="cont">
             <h1>Nichole Mattera</h1>
             <h2>Mobile, Full-Stack Web, and Switch Homebrew Developer</h2>
             <div class="soc">
-                <a href="https://twitter.com/NicholeMattera" target="_blank" rel="noreferrer" class="btn btn-ico tw" aria-label="Nichole's Twitter" data-cy="social-btn">
+                <a href="https://twitter.com/NicholeMattera" target="_blank" rel="noreferrer" class="btn btn-ico tw" aria-label="Nichole's Twitter">
                     <svg aria-hidden="true" focusable="false" viewBox="0 0 512 512" aria-label="Twitter" role="img">
                         <title id="twitterTitle">Twitter</title>
                         <path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path>
                     </svg>
                 </a>
-                <a href="https://linkedin.com/in/nicholemattera" target="_blank" rel="noreferrer" class="btn btn-ico ln" aria-label="Nichole's LinkedIn" data-cy="social-btn">
+                <a href="https://linkedin.com/in/nicholemattera" target="_blank" rel="noreferrer" class="btn btn-ico ln" aria-label="Nichole's LinkedIn">
                     <svg aria-hidden="true" focusable="false" viewBox="0 0 448 512" aria-label="LinkedIn" role="img">
                         <path fill="currentColor" d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z"></path>
                     </svg>
                 </a>
-                <a href="https://git.nicholemattera.com" target="_blank" rel="noreferrer" class="btn btn-ico gh" aria-label="Nichole's Gitea" data-cy="social-btn">
+                <a href="https://git.nicholemattera.com" target="_blank" rel="noreferrer" class="btn btn-ico gh" aria-label="Nichole's Gitea">
                     <svg aria-hidden="true" focusable="false" viewBox="0 0 384 512" aria-label="Git" role="img">
                         <path fill="currentColor" d="M304 192c-38 0-69.8 26.5-77.9 62-23.9-3.5-58-12.9-83.9-37.6-16.6-15.9-27.9-36.5-33.7-61.6C138.6 143.3 160 114.1 160 80c0-44.2-35.8-80-80-80S0 35.8 0 80c0 35.8 23.5 66.1 56 76.3v199.3C23.5 365.9 0 396.2 0 432c0 44.2 35.8 80 80 80s80-35.8 80-80c0-35.8-23.5-66.1-56-76.3V246.1c1.6 1.7 3.3 3.4 5 5 39.3 37.5 90.4 48.6 121.2 51.8 12.1 28.9 40.6 49.2 73.8 49.2 44.2 0 80-35.8 80-80S348.2 192 304 192zM80 48c17.6 0 32 14.4 32 32s-14.4 32-32 32-32-14.4-32-32 14.4-32 32-32zm0 416c-17.6 0-32-14.4-32-32s14.4-32 32-32 32 14.4 32 32-14.4 32-32 32zm224-160c-17.6 0-32-14.4-32-32s14.4-32 32-32 32 14.4 32 32-14.4 32-32 32z"></path>
                     </svg>
                 </a>
             </div>
-            <a href="images/Resume.pdf" target="_blank" class="btn res" aria-label="View Résumé" data-cy="resume-btn">View Resume</a>
+            <a href="images/Resume.pdf" target="_blank" class="btn res" aria-label="View Résumé">View Resume</a>
         </div>
 
         <script type="text/javascript">
+{{ if .IncludeServiceWorker }}
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('/service-worker.js');
+            }
+{{ end }}
             var _paq = window._paq = window._paq || [];
             _paq.push(['trackPageView']);
             _paq.push(['enableLinkTracking']);
