@@ -46,7 +46,7 @@ func main() {
         }
 
         // Redirect all HTTP traffic to HTTPS.
-        if req.TLS == nil {
+        if req.Header.Get("X-Forwarded-Proto") == "http" {
             http.Redirect(w, req, "https://" + req.Host + "/", http.StatusPermanentRedirect)
         }
 
