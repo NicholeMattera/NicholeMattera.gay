@@ -50,6 +50,11 @@ func main() {
             http.Redirect(w, req, "https://" + req.Host + "/", http.StatusPermanentRedirect)
         }
 
+        // Redirect all www traffic to non-www.
+        if strings.HasPrefix(req.Host, "www.") {
+            http.Redirect(w, req, "https://" + req.Host[4:] + "/", http.StatusPermanentRedirect)
+        }
+
         // For the month of June redirect all traffic to lgbt or gay TLD.
         if time.Now().Month() == 6 && (!strings.HasSuffix(req.Host, "lgbt") || !strings.HasSuffix(req.Host, "gay")) {
             rand.Seed(time.Now().UnixNano())
