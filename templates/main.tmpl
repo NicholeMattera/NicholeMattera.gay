@@ -195,55 +195,61 @@
         <script type="text/javascript">
 {{ if .IncludeServiceWorker }}
             if ('serviceWorker' in navigator) {
-                navigator.serviceWorker.register('/service-worker.js');
+                navigator.serviceWorker.register('/service-worker.js')
             }
 {{ end }}
 
 {{ if .Pride }}
-            var ANIMATION_TIME = 1500
-            var ANIMATIONS = [ 'bi', 'lesbian', 'pan', 'pride', 'trans' ]
-
+            var animations = [ 'bi', 'lesbian', 'pan', 'pride', 'trans' ]
+            var animation = ''
             var title = document.querySelector('h1')
             var subtitle = document.querySelector('h2')
 
             function animate() {
-                if (title.classList.contains('animating') || subtitle.classList.contains('animating')) {
+                if (animation != '') {
                     return
                 }
 
-                var animation = ANIMATIONS[Math.floor(Math.random() * ANIMATIONS.length)];
+                animation = animations[Math.floor(Math.random() * animations.length)];
 
                 title.classList.add('animating')
                 title.classList.add(animation)
+            }
 
-                setTimeout(() => {
-                    title.classList.remove('animating')
-                    title.classList.remove(animation)
-                    subtitle.classList.add('animating')
-                    subtitle.classList.add(animation)
-                }, ANIMATION_TIME)
+            function titleAnimationEnd() {
+                title.classList.remove('animating')
+                title.classList.remove(animation)
+                subtitle.classList.add('animating')
+                subtitle.classList.add(animation)
+            }
 
-                setTimeout(() => {
-                    subtitle.classList.remove('animating')
-                    subtitle.classList.remove(animation)
-                }, ANIMATION_TIME * 2)
+            function subtitleAnimationEnd() {
+                subtitle.classList.remove('animating')
+                subtitle.classList.remove(animation)
+                animation = ''
             }
 
             window.addEventListener('load', animate)
             title.addEventListener('mouseover', animate)
+            title.addEventListener('webkitAnimationEnd', titleAnimationEnd)
+            title.addEventListener('animationend', titleAnimationEnd)
+            title.addEventListener('oanimationend', titleAnimationEnd)
             subtitle.addEventListener('mouseover', animate)
+            subtitle.addEventListener('webkitAnimationEnd', subtitleAnimationEnd)
+            subtitle.addEventListener('animationend', subtitleAnimationEnd)
+            subtitle.addEventListener('oanimationend', subtitleAnimationEnd)
 {{ end }}
 
-            var _paq = window._paq = window._paq || [];
-            _paq.push(['trackPageView']);
-            _paq.push(['enableLinkTracking']);
+            var _paq = window._paq = window._paq || []
+            _paq.push(['trackPageView'])
+            _paq.push(['enableLinkTracking'])
             (function() {
-                var u="//matomo.nicholemattera.com/";
-                _paq.push(['setTrackerUrl', u+'matomo.php']);
-                _paq.push(['setSiteId', '1']);
-                var d=document, m=d.createElement('script'), wf = d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                m.type='text/javascript'; m.async=true; m.src=u+'matomo.js'; 
-                s.parentNode.insertBefore(m, s);
+                var u="//matomo.nicholemattera.com/"
+                _paq.push(['setTrackerUrl', u+'matomo.php'])
+                _paq.push(['setSiteId', '1'])
+                var d=document, m=d.createElement('script'), wf = d.createElement('script'), s=d.getElementsByTagName('script')[0]
+                m.type='text/javascript'; m.async=true; m.src=u+'matomo.js'
+                s.parentNode.insertBefore(m, s)
             })();
         </script>
     </body>
