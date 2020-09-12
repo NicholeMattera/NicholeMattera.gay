@@ -1,0 +1,38 @@
+h1, h2 {
+    background-repeat: no-repeat;
+}
+
+.animating {
+    animation: slide-right 1.5s linear forwards;
+    background-position: -475px 0;
+}
+
+.trans {
+    background-image: url(../images/trans.svg);
+}
+
+.pride {
+    background-image: url(../images/pride.svg);
+}
+
+.bi {
+    background-image: url(../images/bi.svg);
+}
+
+.pan {
+    background-image: url(../images/pan.svg);
+}
+
+.lesbian {
+    background-image: url(../images/lesbian.svg);
+}
+
+@keyframes slide-right {
+    0% {
+        background-position: -475px 0;
+    }
+
+    100% {
+        background-position: 700px 0;
+    }
+}
