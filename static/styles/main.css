@@ -49,10 +49,12 @@ h1, h2 {
 
 .title {
     clip-path: url('#title');
+    -webkit-clip-path: url('#title');
 }
 
 .subtitle {
     clip-path: url('#subtitle');
+    -webkit-clip-path: url('#subtitle');
 }
 
 video, .bg, .cont {
@@ -156,9 +158,11 @@ video {
 
     .title {
         clip-path: url('#mobileTitle');
+        -webkit-clip-path: url('#mobileTitle');
     }
     
     .subtitle {
         clip-path: url('#mobileSubtitle');
+        -webkit-clip-path: url('#mobileSubtitle');
     }
 }
