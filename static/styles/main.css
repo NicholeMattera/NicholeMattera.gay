@@ -15,14 +15,14 @@ a {
     text-decoration: none;
 }
 
-header {
+header.modern {
     height: 88px;
     margin: 0 0 18px 0;
     position: relative;
     width: 702px;
 }
 
-h1, h2 {
+header.modern h1, header.modern h2 {
     background-color: #FFF;
     height: 100%;
     left: 0;
@@ -36,7 +36,7 @@ h1, h2 {
     z-index: 2;
 }
 
-.shadow {
+header.modern .shadow {
     background-color: #000;
     height: 100%;
     left: 2px;
@@ -47,12 +47,12 @@ h1, h2 {
     z-index: 1;
 }
 
-.title {
+header.modern .title {
     clip-path: url('#title');
     -webkit-clip-path: url('#title');
 }
 
-.subtitle {
+header.modern .subtitle {
     clip-path: url('#subtitle');
     -webkit-clip-path: url('#subtitle');
 }

@@ -30,12 +30,19 @@
         <div class="bg"></div>
 
         <div class="cont">
-            <header>
+{{ if .Safari }}
+            <header class="safari">
+                <h1 class="title">Nichole Mattera</h1>
+                <h2 class="subtitle">Mobile, Full-Stack Web, &amp; Homebrew Developer</h2>
+            </header>
+{{ else }}
+            <header class="modern">
                 <h1 class="title">Nichole Mattera</h1>
                 <h2 class="subtitle">Mobile, Full-Stack Web, &amp; Homebrew Developer</h2>
                 <div class="shadow title"></div>
                 <div class="shadow subtitle"></div>
             </header>
+{{ end }}
             <div class="soc">
                 <a href="https://twitter.com/NicholeMattera" target="_blank" rel="noreferrer" class="btn btn-ico tw" aria-label="Nichole's Twitter">
                     <svg aria-hidden="true" focusable="false" viewBox="0 0 512 512" aria-label="Twitter" role="img">
@@ -57,6 +64,7 @@
             <a href="images/Resume.pdf" target="_blank" class="btn res" aria-label="View Résumé">View Resume</a>
         </div>
 
+{{ if not .Safari }}
         <svg width="0" height="0">
             <defs>
                 <clipPath id="title">
@@ -305,6 +313,7 @@
                 </clipPath>
             </defs>
         </svg>
+{{ end }}
 
         <script type="text/javascript">
 {{ if .IncludeServiceWorker }}
@@ -314,46 +323,44 @@
 {{ end }}
 
 {{ if .Pride }}
-            var animations = [ 'bi', 'lesbian', 'pan', 'pride', 'trans' ]
-            var animation = ''
-            var title = document.querySelector('h1')
-            var subtitle = document.querySelector('h2')
+            if (navigator.userAgent.indexOf('AppleWebKit') === -1) {
+                var animations = [ 'bi', 'lesbian', 'pan', 'pride', 'trans' ]
+                var animation = ''
+                var title = document.querySelector('h1')
+                var subtitle = document.querySelector('h2')
 
-            function animate() {
-                if (animation != '') {
-                    return
+                function animate() {
+                    if (animation != '') {
+                        return
+                    }
+
+                    animation = animations[Math.floor(Math.random() * animations.length)];
+
+                    title.classList.add('animating')
+                    title.classList.add(animation)
                 }
 
-                animation = animations[Math.floor(Math.random() * animations.length)];
+                function titleAnimationEnd() {
+                    title.classList.remove('animating')
+                    title.classList.remove(animation)
+                    subtitle.classList.add('animating')
+                    subtitle.classList.add(animation)
+                }
 
-                title.classList.add('animating')
-                title.classList.add(animation)
+                function subtitleAnimationEnd() {
+                    subtitle.classList.remove('animating')
+                    subtitle.classList.remove(animation)
+                    animation = ''
+                }
+
+                window.addEventListener('load', animate)
+                title.addEventListener('mouseover', animate)
+                title.addEventListener('touchstart', animate)
+                title.addEventListener('animationend', titleAnimationEnd)
+                subtitle.addEventListener('mouseover', animate)
+                subtitle.addEventListener('touchstart', animate)
+                subtitle.addEventListener('animationend', subtitleAnimationEnd)
             }
-
-            function titleAnimationEnd() {
-                title.classList.remove('animating')
-                title.classList.remove(animation)
-                subtitle.classList.add('animating')
-                subtitle.classList.add(animation)
-            }
-
-            function subtitleAnimationEnd() {
-                subtitle.classList.remove('animating')
-                subtitle.classList.remove(animation)
-                animation = ''
-            }
-
-            window.addEventListener('load', animate)
-            title.addEventListener('mouseover', animate)
-            title.addEventListener('touchstart', animate)
-            title.addEventListener('webkitAnimationEnd', titleAnimationEnd)
-            title.addEventListener('animationend', titleAnimationEnd)
-            title.addEventListener('oanimationend', titleAnimationEnd)
-            subtitle.addEventListener('mouseover', animate)
-            subtitle.addEventListener('touchstart', animate)
-            subtitle.addEventListener('webkitAnimationEnd', subtitleAnimationEnd)
-            subtitle.addEventListener('animationend', subtitleAnimationEnd)
-            subtitle.addEventListener('oanimationend', subtitleAnimationEnd)
 {{ end }}
 
             var _paq = window._paq = window._paq || []
