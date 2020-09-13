@@ -73,7 +73,7 @@ func main() {
         if req.URL.Path == "/" || req.URL.Path == "/offline" {
             data := TemplateData {
                 IncludeServiceWorker:   req.URL.Path == "/",
-                Pride:                  true,//strings.HasSuffix(req.Host, "lgbt") || strings.HasSuffix(req.Host, "gay"),
+                Pride:                  strings.HasSuffix(req.Host, "lgbt") || strings.HasSuffix(req.Host, "gay"),
                 Safari:                 strings.Contains(req.Header.Get("User-Agent"), "AppleWebKit"),
             }
 
