@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 425 72" style="enable-background:new 0 0 425 72;">
-<g><path fill="#FF0018" d="M0,0 L58.17,0 L130.17,72 L71.34,72"/><path fill="#FFA52C" d="M189.29,72 L117.29,0 L58.17,0 L130.17,72"/><path fill="#FFFF41" d="M247.84,72 L175.84,0 L117.52,0 L189.52,72"/><path fill="#008018" d="M306.67,72 L234.67,0 L175.84,0 L247.84,72"/><path fill="#0000F9" d="M365.85,72 L293.85,0 L234.67,0 L306.67,72"/><path fill="#86007D" d="M424,72 L352.25,0 L293.42,0 L365.42,72"/></g>
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 725 372" style="enable-background:new 0 0 725 372;">
+<g><path fill="#FF0018" d="M0,0 L58.17,0 L430.17,372 L371.34,372"/><path fill="#FFA52C" d="M489.29,372 L117.29,0 L58.17,0 L430.17,372"/><path fill="#FFFF41" d="M547.84,372 L175.84,0 L117.52,0 L489.52,372"/><path fill="#008018" d="M606.67,372 L234.67,0 L175.84,0 L547.84,372"/><path fill="#0000F9" d="M665.85,372 L293.85,0 L234.67,0 L606.67,372"/><path fill="#86007D" d="M724,372 L352.25,0 L293.42,0 L665.42,372"/></g>
 </svg>

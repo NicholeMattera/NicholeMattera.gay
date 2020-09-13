@@ -4,7 +4,7 @@ h1, h2 {
 
 .animating {
     animation: slide-right 1.5s linear forwards;
-    background-position: -475px 0;
+    background-position: -166px 0;
 }
 
 .trans {
@@ -29,10 +29,27 @@ h1, h2 {
 
 @keyframes slide-right {
     0% {
-        background-position: -475px 0;
+        background-position: -166px 0;
     }
 
     100% {
-        background-position: 700px 0;
+        background-position: 681px 0;
+    }
+}
+
+@media only screen and (max-width: 702px) {
+    .animating {
+        animation: slide-right 1.17s linear forwards;
+        background-position: -333px 0;
+    }
+
+    @keyframes slide-right {
+        0% {
+            background-position: -333px 0;
+        }
+    
+        100% {
+            background-position: 333px 0;
+        }
     }
 }
