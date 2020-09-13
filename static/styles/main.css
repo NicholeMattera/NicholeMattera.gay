@@ -15,6 +15,20 @@ a {
     text-decoration: none;
 }
 
+header.safari h1, header.safari h2 {
+    text-align: center;
+}
+
+header.safari h1 {
+    font-size: 68px;
+    margin: 0;
+}
+
+header.safari h2 {
+    font-size: 24px;
+    margin: 0 0 18px;
+}
+
 header.modern {
     height: 88px;
     margin: 0 0 18px 0;
