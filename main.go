@@ -14,7 +14,6 @@ import (
 type TemplateData struct {
     IncludeServiceWorker    bool
     Pride                   bool
-    Safari                  bool
 }
 
 func fileExists(path string) bool {
@@ -74,7 +73,6 @@ func main() {
             data := TemplateData {
                 IncludeServiceWorker:   req.URL.Path == "/",
                 Pride:                  strings.HasSuffix(req.Host, "lgbt") || strings.HasSuffix(req.Host, "gay"),
-                Safari:                 strings.Contains(req.Header.Get("User-Agent"), "AppleWebKit") && !strings.Contains(req.Header.Get("User-Agent"), "Chrome"),
             }
 
             mainTemplate.Execute(w, data)

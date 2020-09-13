@@ -5,9 +5,8 @@ html, body {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Source Sans Pro', Arial, Helvetica, sans-serif;
     text-transform: uppercase;
-    text-shadow: 2px 2px #000;
 }
 
 a {
@@ -15,60 +14,22 @@ a {
     text-decoration: none;
 }
 
-header.safari h1, header.safari h2 {
+h1, h2 {
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color: #FFF;
+    color: transparent;
     text-align: center;
 }
 
-header.safari h1 {
-    font-size: 68px;
+h1 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    font-size: 64px;
     margin: 0;
 }
 
-header.safari h2 {
-    font-size: 24px;
+h2 {
     margin: 0 0 18px;
-}
-
-header.modern {
-    height: 88px;
-    margin: 0 0 18px 0;
-    position: relative;
-    width: 702px;
-}
-
-header.modern h1, header.modern h2 {
-    background-color: #FFF;
-    height: 100%;
-    left: 0;
-    margin: 0;
-    overflow: hidden;
-    position: absolute;
-    text-indent: 100vw;
-    top: 0;
-    white-space: nowrap;
-    width: 100%;
-    z-index: 2;
-}
-
-header.modern .shadow {
-    background-color: #000;
-    height: 100%;
-    left: 2px;
-    margin: 0;
-    position: absolute;
-    top: 2px;
-    width: 100%;
-    z-index: 1;
-}
-
-header.modern .title {
-    clip-path: url('#title');
-    -webkit-clip-path: url('#title');
-}
-
-header.modern .subtitle {
-    clip-path: url('#subtitle');
-    -webkit-clip-path: url('#subtitle');
 }
 
 video, .bg, .cont {
@@ -102,7 +63,6 @@ video {
     display: block;
     border: 2px solid #FFF;
     border-radius: 27px;
-    box-shadow: 2px 2px #000;
     background: transparent;
     height: 50px;
     font-size: 20px;
@@ -162,21 +122,4 @@ video {
 
 .res {
     padding: 0 20px;
-}
-
-@media only screen and (max-width: 702px) {
-    header {
-        width: 348px;
-        height: 172px;
-    }
-
-    .title {
-        clip-path: url('#mobileTitle');
-        -webkit-clip-path: url('#mobileTitle');
-    }
-    
-    .subtitle {
-        clip-path: url('#mobileSubtitle');
-        -webkit-clip-path: url('#mobileSubtitle');
-    }
 }
