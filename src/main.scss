@@ -10,8 +10,35 @@ html, body {
 }
 
 a {
+    display: block;
+    border: 2px solid #FFF;
+    border-radius: 27px;
+    background: transparent;
     color: #FFF;
+    height: 50px;
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
     text-decoration: none;
+
+    &:hover, &:focus {
+        background: #FFF;
+        color: #000;
+        text-shadow: none;
+        outline: none;
+    }
+
+    &.icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > svg {
+            display: block;
+            width: 20px;
+            height: 20px;
+        }
+    }
 }
 
 h1, h2 {
@@ -32,7 +59,7 @@ h2 {
     margin: 0 0 18px;
 }
 
-video, .bg, .cont {
+video, .container {
     position: absolute;
     top: 0;
     left: 0;
@@ -43,83 +70,43 @@ video, .bg, .cont {
 
 video {
     object-fit: cover;
-    z-index: 0;
 }
 
-.bg {
+.container {
     background: transparent url('../images/backgroundOverlay.png') repeat;
-    z-index: 1;
-}
-
-.cont {
     display: flex;
-    z-index: 2;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.btn {
-    display: block;
-    border: 2px solid #FFF;
-    border-radius: 27px;
-    background: transparent;
-    height: 50px;
-    font-size: 20px;
-    line-height: 50px;
-    text-align: center;
-}
-
-.btn:hover, .btn:focus {
-    background: #FFF;
-    color: #000;
-    text-shadow: none;
-    outline: none;
-}
-
-.btn-ico {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.btn-ico > svg {
-    display: block;
-    width: 20px;
-    height: 20px;
-}
-
-.soc {
+.social {
     display: flex;
     justify-content: center;
     margin: 0 0 20px;
+    
+    a {
+        width: 50px;
+        margin-right: 35px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
-.soc a {
-    width: 50px;
-    margin-right: 35px;
-}
-
-.soc a:focus {
-    outline: none;
-}
-
-.soc a:last-child {
-    margin-right: 0;
-}
-
-.tw:hover, .tw:focus {
+.twitter:hover, .twitter:focus {
     color: #1DA1F2;
 }
 
-.ln:hover, .ln:focus {
+.linkedin:hover, .linkedin:focus {
     color: #0077B5;
 }
 
-.gh:hover, .gh:focus {
+.git:hover, .git:focus {
     color: #333;
 }
 
-.res {
+.resume {
     padding: 0 20px;
 }

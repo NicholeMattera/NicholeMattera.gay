@@ -1,0 +1,28 @@
+{
+  "name": "nichole-mattera",
+  "version": "1.0.0",
+  "description": "I'm a programmer making cool things.",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "serve": "npm run build && go run ./main.go"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.nicholemattera.com:NicholeMattera/NicholeMattera.com.git"
+  },
+  "author": {
+    "name": "Nichole Mattera",
+    "email": "me@nicholemattera.gay",
+    "url": "https://nicholemattera.com"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^4.3.0",
+    "mini-css-extract-plugin": "^0.11.2",
+    "node-sass": "^4.14.1",
+    "sass-loader": "^10.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  }
+}
