@@ -2,9 +2,14 @@ h1, h2 {
     background-repeat: no-repeat;
 }
 
-.animating {
-    animation: slide-right 1.5s linear forwards;
-    background-position: -166px 0;
+h1.animating {
+    animation: slide-right-title 1.5s linear forwards;
+    background-position: -425px 0;
+}
+
+h2.animating {
+    animation: slide-right-subtitle 1.5s linear forwards;
+    background-position: -173px 0;
 }
 
 .trans {
@@ -27,29 +32,22 @@ h1, h2 {
     background-image: url('/images/lesbian.svg');
 }
 
-@keyframes slide-right {
+@keyframes slide-right-title {
     0% {
-        background-position: -166px 0;
+        background-position: -425px 0;
     }
 
     100% {
-        background-position: 681px 0;
+        background-position: 564px 0;
     }
 }
 
-@media only screen and (max-width: 702px) {
-    .animating {
-        animation: slide-right 1.17s linear forwards;
-        background-position: -333px 0;
+@keyframes slide-right-subtitle {
+    0% {
+        background-position: -173px 0;
     }
 
-    @keyframes slide-right {
-        0% {
-            background-position: -333px 0;
-        }
-    
-        100% {
-            background-position: 333px 0;
-        }
+    100% {
+        background-position: 546px 0;
     }
 }
