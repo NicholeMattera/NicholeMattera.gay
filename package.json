@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "build": "webpack",
-    "serve": "npm run build && go run ./main.go"
+    "serve": "npm run build && go run ."
   },
   "repository": {
     "type": "git",
