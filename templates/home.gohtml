@@ -22,9 +22,17 @@
     </head>
     <body>
 {{ if .Pride }}
+    {{ if .IncludeServiceWorker }}
         <video autoplay loop muted poster="/static/images/prideBackground.jpg" src="/static/videos/prideBackground.m4v"></video>
+    {{ else }}
+        <div class="offline-background" style="background-image: url('/static/images/prideBackground.jpg')"></div>
+    {{ end }}
 {{ else }}
+    {{ if .IncludeServiceWorker }}
         <video autoplay loop muted poster="/static/images/background.jpg" src="/static/videos/background.m4v"></video>
+    {{ else }}
+        <div class="offline-background" style="background-image: url('/static/images/background.jpg')"></div>
+    {{ end }}
 {{ end }}
 
         <div class="container">
