@@ -10,7 +10,6 @@ import (
 )
 
 type HomeData struct {
-    IncludeServiceWorker    bool
     Pride                   bool
 }
 
@@ -23,7 +22,6 @@ func home() http.Handler {
 
     return http.HandlerFunc(func(w http.ResponseWriter, req *http.Request) {
         data := HomeData {
-            IncludeServiceWorker:   req.URL.Query().Get("offline") != "1",
             Pride:                  strings.HasSuffix(req.Host, "lgbt") || strings.HasSuffix(req.Host, "gay"),
         }
 

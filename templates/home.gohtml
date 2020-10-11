@@ -22,17 +22,9 @@
     </head>
     <body>
 {{ if .Pride }}
-    {{ if .IncludeServiceWorker }}
         <video autoplay loop muted poster="/static/images/prideBackground.jpg" src="/static/videos/prideBackground.m4v"></video>
-    {{ else }}
-        <div class="offline-background" style="background-image: url('/static/images/prideBackground.jpg')"></div>
-    {{ end }}
 {{ else }}
-    {{ if .IncludeServiceWorker }}
         <video autoplay loop muted poster="/static/images/background.jpg" src="/static/videos/background.m4v"></video>
-    {{ else }}
-        <div class="offline-background" style="background-image: url('/static/images/background.jpg')"></div>
-    {{ end }}
 {{ end }}
 
         <div class="container">
@@ -60,13 +52,11 @@
             <a href="/static/Resume.pdf" target="_blank" class="resume" aria-label="View Résumé">View Resume</a>
         </div>
 
-{{ if .IncludeServiceWorker }}
         <script type="text/javascript">
             if ('serviceWorker' in navigator) {
                 navigator.serviceWorker.register('/static/service-worker.js')
             }
         </script>
-{{ end }}
         <script src="/static/main.js" type="text/javascript"></script>
 {{ if .Pride }}
         <script src="/static/pride.js" type="text/javascript"></script>
