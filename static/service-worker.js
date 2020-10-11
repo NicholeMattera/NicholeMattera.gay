@@ -30,9 +30,11 @@ const prideFiles = [
 self.addEventListener('install', (event) => {
     event.waitUntil(
         caches.open(cacheName).then((cache) => {
-            return cache.addAll(
-                (self.location.hostname.endsWith('lgbt') || self.location.hostname.endsWith('gay')) ? prideFiles : files
-            )
+            if (self.location.hostname.endsWith('lgbt') || self.location.hostname.endsWith('gay')) {
+                return cache.addAll(prideFiles)
+            }
+
+            return cache.addAll(files)
         })
     )
 })
