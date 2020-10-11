@@ -10,7 +10,7 @@ import (
 )
 
 type HomeData struct {
-    Pride                   bool
+    Pride   bool
 }
 
 func home() http.Handler {
