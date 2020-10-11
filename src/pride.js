@@ -1,7 +1,7 @@
 import './pride.scss'
 
 const animations = [ 'bi', 'lesbian', 'pan', 'pride', 'trans' ]
-const animation = ''
+let animation = ''
 const title = document.querySelector('h1')
 const subtitle = document.querySelector('h2')
 
