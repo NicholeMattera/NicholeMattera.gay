@@ -1,63 +1,65 @@
-const CACHE_NAME = 'offline'
+const cacheName = 'NicholeMattera-v1'
 
-const BACKGROUND_URL = '/static/images/background.jpg'
-const BACKGROUND_OVERLAY_URL = '/static/images/backgroundOverlay.png'
-const CSS_URL = '/static/main.css'
-const HOME_URL = '/'
-const JS_URL = '/static/main.js'
-const MANIFEST_URL = '/static/manifest.json'
-const PRIDE_BACKGROUND_URL = '/static/images/prideBackground.jpg'
-const PRIDE_BI_URL = '/static/images/bi.svg'
-const PRIDE_CSS_URL = '/static/pride.css'
-const PRIDE_JS_URL = '/static/pride.js'
-const PRIDE_LESBIAN_URL = '/static/images/lesbian.svg'
-const PRIDE_PAN_URL = '/static/images/pan.svg'
-const PRIDE_PRIDE_URL = '/static/images/pride.svg'
-const PRIDE_TRANS_URL = '/static/images/trans.svg'
-const RESUME_URL = '/static/Resume.pdf'
+const files = [
+    '/',
+    '/static/images/background.jpg',
+    '/static/images/backgroundOverlay.png',
+    '/static/main.css',
+    '/static/main.js',
+    '/static/manifest.json',
+    '/static/Resume.pdf',
+]
+
+const prideFiles = [
+    '/',
+    '/static/images/backgroundOverlay.png',
+    '/static/images/bi.svg',
+    '/static/images/lesbian.svg',
+    '/static/images/pan.svg',
+    '/static/images/pride.svg',
+    '/static/images/prideBackground.jpg',
+    '/static/images/trans.svg',
+    '/static/main.css',
+    '/static/main.js',
+    '/static/manifest.json',
+    '/static/pride.js',
+    '/static/pride.css',
+    '/static/Resume.pdf',
+]
 
 self.addEventListener('install', (event) => {
-    event.waitUntil((async () => {
-        const cache = await caches.open(CACHE_NAME)
-
-        if (location.hostname.endsWith('lgbt') || location.hostname.endsWith('gay')) {
-            cache.addAll([
-                BACKGROUND_OVERLAY_URL,
-                CSS_URL,
-                HOME_URL,
-                JS_URL,
-                MANIFEST_URL,
-                PRIDE_BACKGROUND_URL,
-                PRIDE_BI_URL,
-                PRIDE_CSS_URL,
-                PRIDE_JS_URL,
-                PRIDE_LESBIAN_URL,
-                PRIDE_PAN_URL,
-                PRIDE_PRIDE_URL,
-                PRIDE_TRANS_URL,
-                RESUME_URL,
-            ])
-        } else {
-            cache.addAll([
-                BACKGROUND_URL,
-                BACKGROUND_OVERLAY_URL,
-                CSS_URL,
-                HOME_URL,
-                JS_URL,
-                MANIFEST_URL,
-                RESUME_URL,
-            ])
-        }
-    })())
+    event.waitUntil(
+        caches.open(cacheName).then((cache) => {
+            return cache.addAll(
+                (self.location.hostname.endsWith('lgbt') || self.location.hostname.endsWith('gay')) ? prideFiles : files
+            )
+        })
+    )
 })
 
 self.addEventListener('activate', (event) => {
-  event.waitUntil(clients.claim())
+    event.waitUntil(
+        caches.keys().then((keys) => {
+            return Promise.all(
+                keys.map((key) => {
+                    if (key !== cacheName) {
+                        return caches.delete(key)
+                    }
+                })
+            )
+        })
+    )
 })
 
 self.addEventListener('fetch', (event) => {
-    event.waitUntil((async () => {
-        const response = await caches.match(event.request)
-        event.respondWith(response || fetch(event.request))
-    })())
+    event.respondWith(
+        caches.match(event.request).then((cachedResponse) => {
+            return cachedResponse || fetch(event.response).then((response) => {
+                return caches.open(cacheName).then((cache) => {
+                    cache.put(event.request, response.clone())
+                    return response
+                })
+            })
+        })
+    )
 })
