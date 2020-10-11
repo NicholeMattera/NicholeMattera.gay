@@ -51,6 +51,10 @@ self.addEventListener('install', (event) => {
     })())
 })
 
+self.addEventListener('activate', (event) => {
+  event.waitUntil(clients.claim())
+})
+
 self.addEventListener('fetch', async (event) => {
     const response = await caches.match(event.request)
     event.respondWith(response || fetch(event.request))
