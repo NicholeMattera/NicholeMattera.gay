@@ -23,7 +23,6 @@ self.addEventListener('install', (event) => {
         if (location.hostname.endsWith('lgbt') || location.hostname.endsWith('gay')) {
             cache.addAll([
                 BACKGROUND_OVERLAY_URL,
-                BACKGROUND_OVERLAY_URL,
                 CSS_URL,
                 HOME_URL,
                 JS_URL,
