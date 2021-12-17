@@ -10,8 +10,7 @@ import (
 // Init initializes the HTTP Server
 func Init() {
 	http.Handle("/", routes.MakeHomeHandler())
-	http.Handle("/mer", routes.MakeGaymerHandler())
-	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("./static"))))
+	// http.Handle("/mer", routes.MakeGaymerHandler())
 
 	log.Fatal(http.ListenAndServe(":8082", nil))
 }
