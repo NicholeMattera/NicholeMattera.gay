@@ -1,0 +1,9 @@
+# Background video clip
+**Source:** https://videohive.net/item/blue-and-red-bokeh/23451163
+
+**Licensed under:** [Video Media (Single Use) License](https://videohive.net/licenses/terms/video_media_single/1.0)
+
+# Pride background video clip
+Source: https://videohive.net/item/gay-pride-flag-/8597894
+
+**Licensed under:** [Video Media (Single Use) License](https://videohive.net/licenses/terms/video_media_single/1.0)

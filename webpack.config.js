@@ -3,12 +3,12 @@ const path = require('path')
 
 module.exports = {
     entry: {
-        main: './src/main.js',
-        pride: './src/pride.js',
+        main: './web/src/main.js',
+        pride: './web/src/pride.js',
     },
     output: {
         filename: '[name].js',
-        path: path.resolve(__dirname, 'static'),
+        path: path.resolve(__dirname, 'build/static'),
     },
     plugins: [new MiniCssExtractPlugin({
         filename: '[name].css',
