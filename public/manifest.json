@@ -1,0 +1,22 @@
+{
+    "background_color": "#212121",
+    "display": "minimal-ui",
+    "icons": [
+        {
+            "src": "/icons/icon-192.png",
+            "type": "image/png",
+            "sizes": "192x192",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/icons/icon-512.png",
+            "type": "image/png",
+            "sizes": "512x512",
+            "purpose": "any maskable"
+        }
+    ],
+    "name": "Nichole Mattera: Résumé",
+    "short_name": "Nichole Mattera",
+    "start_url": "/",
+    "theme_color": "#4A148C"
+}

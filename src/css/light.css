@@ -1,0 +1,31 @@
+@media (prefers-color-scheme: light) {
+    html, body {
+        background: #E8E8E8;
+        color: #000;
+    }
+
+    header {
+        background: #DEDEDE;
+    }
+
+    header .title {
+        background-color: #000;
+    }
+
+    header nav a {
+        color: #000;
+    }
+
+    header nav a:hover, header nav a:focus {
+        background-color: #000;
+        color: #DEDEDE;
+    }
+
+    header nav a:focus {
+        outline-color: #000;
+    }
+
+    main section {
+        background: #DEDEDE;
+    }
+}

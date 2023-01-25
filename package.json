@@ -1,27 +1,19 @@
 {
-  "name": "nichole-mattera",
-  "version": "1.0.0",
-  "description": "I'm a programmer making cool things.",
-  "private": true,
-  "scripts": {
-    "build": "scripts/build.sh"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@git.nicholemattera.com:NicholeMattera/NicholeMattera.com.git"
-  },
-  "author": {
-    "name": "Nichole Mattera",
-    "email": "me@nicholemattera.gay",
-    "url": "https://nicholemattera.com"
+  "author": "Nichole Mattera",
+  "description": "Résumé for Nichole Mattera",
+  "devDependencies": {
+    "vite": "^4.0.4",
+    "vite-plugin-minify": "^1.5.2"
   },
   "license": "ISC",
-  "devDependencies": {
-    "css-loader": "^6.5.1",
-    "mini-css-extract-plugin": "^2.4.5",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^12.4.0",
-    "webpack": "^5.65.0",
-    "webpack-cli": "^4.9.1"
-  }
+  "name": "nicholemattera.gay",
+  "repository": {
+    "type": "git",
+    "url": "git@git.nicholemattera.com:NicholeMattera/NicholeMattera.git"
+  },
+  "scripts": {
+    "build": "vite build",
+    "serve": "vite"
+  },
+  "version": "1.0.0"
 }
