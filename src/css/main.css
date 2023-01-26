@@ -38,7 +38,7 @@ header .title.animating {
     background-position: -147px 0;
 }
 
-header p {
+header .subtitle {
     font-size: 14px;
 }
 
@@ -189,7 +189,7 @@ main section dd p:last-child {
         margin: 10px 0;
     }
 
-    header p {
+    header .subtitle {
         margin: 0 0 10px;
     }
 

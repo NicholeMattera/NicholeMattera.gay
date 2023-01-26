@@ -1,0 +1,282 @@
+{
+    "title": "Nichole Mattera",
+    "subtitle": "Full-Stack Web, Mobile, &amp; Homebrew Engineer",
+    "description": "Résumé for Nichole Mattera",
+    "experiences": [
+        {
+            "organization": "Pendo.io, Inc.",
+            "roles": [
+                {
+                    "title": "Staff Front End Engineer",
+                    "start": "2023-01",
+                    "description": ""
+                },
+                {
+                    "title": "Staff Front End Engineer, Tech Lead",
+                    "start": "2022-02",
+                    "end": "2023-01",
+                    "description": ""
+                },
+                {
+                    "title": "GSRM Affinity Group Co-Chair",
+                    "start": "2021-02",
+                    "end": "2022-04",
+                    "description": "<p>As the co-chair of the GSRM affinity group at Pendo I helped plan out monthly meetings, and events with our community. I also aided in educating Pendozers both in and outside of the group on important GSRM issues, such as daily slack posts for Transgender Awareness Week, Aromantic Spectrum Awareness Week, and much more. Being a co-chair also made me part of Pendo's Diversity Advisory Board, where I would advocate for changes not just for the GSRM group, but for other minority groups as well.</p>"
+                },
+                {
+                    "title": "Senior Front End Engineer, Tech Lead",
+                    "start": "2021-08",
+                    "end": "2022-02",
+                    "description": "<p>I came in as the Tech Lead for a brand new team for Pendo's Adopt product. We were able to deliver all of Workflows in a quarter in time for the release of the Adopt product and the annual Company Kick-Off event.</p>"
+                },
+                {
+                    "title": "Senior Front End Engineer",
+                    "start": "2020-06",
+                    "end": "2021-08",
+                    "description": "<p>I came in at the tail end of a project to be able to subscribe to account and visitor reports. Even then I was able to help out on the final finishing touches on the email templates to get it ready for release. After that I was apart of the team that worked on Core Events. We were able to introduce a major new feature to the platform, just in time for the companies annual event Pendomonium.</p>"
+                }
+            ]
+        },
+        {
+            "organization": "Cision US, Inc.",
+            "roles": [
+                {
+                    "title": "Software Engineer",
+                    "start": "2016-09",
+                    "end": "2020-06",
+                    "description": "<p>I started off just working on the frontend of the analytics section of the Cision Communications Cloud application. I've moved into a more of a full-stack role working on both the Angular.js frontend and C# backend. I've helped write the social analysis tracking, the dashboard system, and the earned/placed impact areas of the app. I've recently moved on to working on their recently acquired platform TrendKite, which uses ReactJS on the frontend with Java/Groovey on the backend.</p>"
+                }
+            ]
+        },
+        {
+            "organization": "Mindtree, Ltd.",
+            "roles": [
+                {
+                    "title": "Techinical Project Lead",
+                    "start": "2015-08",
+                    "end": "2016-09",
+                    "description": "<p>Was lead programmer on most mobile projects at Mindtree's Gainesville Delivery Center. Some of my day-to-day responsibilities included:</p><ul><li>Estimations for statements of work.</li><li>Creating build processes for the team.</li><li>Setting up continuous integration using Git and Jenkins.</li><li>Meeting with clients to help the business analysis flush out user stories.</li><li>Setting up basic frameworks and design database structures.</li><li>Managing code quality.</li><li>Conducting technical interviews.</li><li>raining/teaching junior programmers. (iOS, Android, HTML, CSS, JS, TDD)</li><li>Helping clients adapt to agile methodology.</li></ul>"
+                },
+                {
+                    "title": "Module Lead",
+                    "start": "2014-01",
+                    "end": "2015-08",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "organization": "Zgraph, Inc.",
+            "roles": [
+                {
+                    "title": "Lead Internet Engineer",
+                    "start": "2013-03",
+                    "end": "2014-01",
+                    "description": "<p>I was the Lead Internet Engineer at Zgraph, Inc, and was the lead programmer on many of the large projects that came into Zgraph. I was also in charge of making sure the eight servers owned by Zgraph at the time stayed up and healthy.</p>"
+                },
+                {
+                    "title": "Internet Engineer",
+                    "start": "2011-11",
+                    "end": "2013-03",
+                    "description": ""
+                }
+            ]
+        },
+        {
+            "organization": "PosiMotion, LLC.",
+            "roles": [
+                {
+                    "title": "Lead Programmer",
+                    "start": "2008-06",
+                    "end": "2011-11",
+                    "description": "<p>I was the lead programmer at PosiMotion, LLC. In this position I was in charge of any main projects that came in or out of the company. I also acted as a mentor for the other programmers that were not as experienced. Additionally I interfaced with the technical teams from other companies or individuals that were interested in publishing and/or working with us.</p>"
+                }
+            ]
+        }
+    ],
+    "publications": [
+        {
+            "name": "Creating Delightful Graphs using HTML5 Canvas"
+        },
+        {
+            "name": "Chapter 5 - iPhone Games Project"
+        }
+    ],
+    "education": [
+        {
+            "name": "A.S. in Computer Programming and Analysis",
+            "description": "Graduated with honors"
+        },
+        {
+            "name": "A.S. Certificate in Computer Programming",
+            "description": "Graduated with honors"
+        }
+    ],
+    "certifications": [
+        {
+            "name": "Pendo Essentials"
+        },
+        {
+            "name": "Orchestra Commerce Platform Technical Training"
+        },
+        {
+            "name": "Scaled Agile Framework Practitioner (SP)"
+        }
+    ],
+    "projects": [
+        {
+            "name": "Pendo Adopt",
+            "type": "Web App",
+            "description": "<p>Worked on Adopt Studio and Workflows.</p>"
+        },
+        {
+            "name": "Pendo Engage",
+            "type": "Web App",
+            "description": "<p>Worked on Scheduled Reports for Visitor and Accounts, Core Events and Product Engagement Score.</p>"
+        },
+        {
+            "name": "Cision Communication Cloud",
+            "type": "Web App",
+            "description": "<p>Worked on the Analytic Dashboards, Impact, and Report Generation.</p>"
+        },
+        {
+            "name": "NX-VVVVVV",
+            "type": "Nintendo Switch Homebrew",
+            "description": "<p>Port to the Nintendo Switch, and contributed some improvements back upstream.</p>"
+        },
+        {
+            "name": "Kosmos Updater",
+            "type": "Nintendo Switch Homebrew",
+            "description": "<p>Homebrew application to update all the custom firmware files on automatically from your console.</p>"
+        },
+        {
+            "name": "Simple TV Launcher",
+            "type": "Android Launcher",
+            "description": "<p>Replacement launcher for the original Google TV and Android TV</p>"
+        },
+        {
+            "name": "Volvo Scout Master & Mack CV360",
+            "type": "iPad App",
+            "description": "<p>CRM iPad application for dealerships to record sales people day-to-day work.</p>"
+        },
+        {
+            "name": "National Marker Company",
+            "type": "E-Commerce Website",
+            "description": "<p>Completely custom e-commerce website with a backend C service to synchronize the site data with their internal systems.</p>"
+        },
+        {
+            "name": "Monterey Boat: Boat Guide",
+            "type": "iOS App",
+            "description": "<p>iPhone and iPad application for browsing features and specifications of boat models.</p>"
+        },
+        {
+            "name": "Toys \"R\" Us Big Book",
+            "type": "iPhone App",
+            "description": "<p>Basic wish list application for Toys \"R\" Us holiday catalog.</p>"
+        },
+        {
+            "name": "National Geographic Jigsaw/Spot It",
+            "type": "iPhone Games",
+            "description": "<p>Six different edutainment iPhone games around National Geographic content.</p>"
+        },
+        {
+            "name": "G-Park",
+            "type": "iPhone App",
+            "description": "<p>App that let you save the location of your parked car along with additional data. Was featured on a iPhone 3G commercial internationally by Apple.</p>"
+        }
+    ],
+    "awards": [
+        {
+            "organization": "Pendo.io, Inc.",
+            "honors": [
+                {
+                    "name": "Most Win Together Panks for Q3FY22",
+                    "date": "2021-11",
+                    "description": "<p>For receiving the most \"Win Together\" Panks (co-workers commendations) in a quarter for upholding Pendo's Win Together core value - We succeed together and challenge each other to grow. We collaborate and support one another as a team.</p>"
+                },
+                {
+                    "name": "Most Total Panks for Q3FY22",
+                    "date": "2021-11",
+                    "description": "<p>For receiving the most overall Panks (co-workers commendations) in a quarter for upholding Pendo's core values.</p>"
+                }
+            ]
+        },
+        {
+            "organization": "Mindtree, Ltd.",
+            "honors": [
+                {
+                    "name": "A-Team",
+                    "issuer": "Reporting Manager",
+                    "date": "2016-09",
+                    "description": "<p>Congratulations to the Mindtree MGIC Team for the outstanding SPORT Delivery. This project was the prime example of AGILE success. The team completed almost twice the amount of Scope for Desktop and Mobile delivery than originally anticipated and Agile implementation as part of the SDLC. The team developed a strong relationship with the client building trust and helped progress the organization towards an Agile transformation while delivering the first MVP 3 weeks before the deadline. Team work, professionalism and dedication is what defines this team and contributed to it's success!</p>"
+                },
+                {
+                    "name": "Bronze Pillar",
+                    "issuer": "Reporting Manager",
+                    "date": "2016-09",
+                    "description": "<p>For scoring a 4.5 or higher on my yearly appraisal for the second year in a row.</p>"
+                },
+                {
+                    "name": "A-Team",
+                    "issuer": "Project Manager for MSC eVMI App",
+                    "date": "2016-06",
+                    "description": "<p>For the fantastic Job performed during the phase 1 of eVMI iOS Mobile App</p>"
+                },
+                {
+                    "name": "Partnership",
+                    "issuer": "Business Analysis for MGIC SPORT Project",
+                    "date": "2016-06",
+                    "description": "<p>I have really appreciated your positivity and and teaming spirit on this engagement! I dont think we could do all of this without you. Thanks for all you have done to help our MGIC partners understand agile! and all you have done to get us set up and off to a great start!</p>"
+                },
+                {
+                    "name": "Unstoppable",
+                    "issuer": "Head of Delivery for the USA Delivery Center",
+                    "date": "2016-06",
+                    "description": "<p>During a recent customer visit with MGIC in Milwaukee I met with their CIO, Greg Chi. While he had many positive things to say about the team, he specifically cited the contributions and accomplishments from Nichole. From Greg's comments it became clear Nichole has delivered the perfect trifecta: collaborative spirit, unrelenting dedication and expert thinking to exceed MGIC's expectations to replace a Salesforce application with a mobile solution.</p>"
+                },
+                {
+                    "name": "Unstoppable",
+                    "issuer": "Scrum Master for MGIC SPORT Project",
+                    "date": "2016-06",
+                    "description": "<p>Nichole has been an outstanding contributor for the MGIC project from the outset. She has worked hard to get the initial designs in place to impress the client. Her innovative thinking, technical expertise, and mentoring while putting the team on the ground have made the process streamlined and a lot less stressful for the junior developers.</p>"
+                },
+                {
+                    "name": "A-Team",
+                    "issuer": "Reporting Manager",
+                    "date": "2016-04",
+                    "description": "<p>Continuously changing Product Owner and requirements being the blocker team demonstrated dedication and passion to get the MVP release for Agile Assessment tool \"Age\" which is going to be Mindtree Proprietary tool for Agile Assessments used heavily in Agile Transformation projects. Contribution from Carrie was amazing without which this was nightmare..! Ed and Andrew being fresh graduated from C2IT demonstrated the quick learning and ability to pivot which was fantastic and Nichole helped the team getting technical roadblocks removed..! All in all great work done..!</p>"
+                },
+                {
+                    "name": "A-Team",
+                    "issuer": "Reporting Manager",
+                    "date": "2016-04",
+                    "description": "<p>Team has done a great job with MSC project Mobile Client development in Swift making a digital footprint in RCM IG as our first engagement with from GDC. Team has received 7/7 for CSAT score with every individual component being rated as 7. This is unique and inspiring to all of us. Great Job team and Good luck ...!</p>"
+                },
+                {
+                    "name": "A-Team",
+                    "issuer": "US VP of Sales for the High Tech Vertical",
+                    "date": "2016-01",
+                    "description": "<p>For creating and executing an extremely successful and memorable visit for the executives of American Red Cross that involved extensive collaboration together with:</p><ul><li>Attention to every single detail of the visit visible in all planning and preparation</li><li>Creating an agenda that resonated with everyone and showed our understanding of the customer</li><li>Demonstrating Mindtree's expertise and how thorough and passionate everyone is in what we do</li><li>Making them feel comfortable and welcome</li></ul>"
+                },
+                {
+                    "name": "Outstanding Performer",
+                    "issuer": "Reporting Manager",
+                    "date": "2015-09",
+                    "description": "<p>For scoring a 4.5 or higher on my yearly appraisal.</p>"
+                },
+                {
+                    "name": "Unstoppable",
+                    "issuer": "Reporting Manager",
+                    "date": "2014-12",
+                    "description": "<p>Nichole has been Unstoppable Mind consistently showing a excellence in execution for her Project work at Volvo. She has been recognized by client not just for her iOS expertise but she had been showing her excellence in Android related work, UI libraries and the list goes on. She has been mentoring new developers in Digital team for iOS, knowledge on Git repo, Continuos integration and Jenkins setup. She has built very nice applications like Responder, which showcases her technical excellence and proactive nature. She get things done while we keep thinking about them at times. It's really great to have her part of Digital team and GDC. Keep up the good work...!</p>"
+                },
+                {
+                    "name": "Unstoppable",
+                    "issuer": "Reporting Manager",
+                    "date": "2014-08",
+                    "description": "<p>Nichole is a great team player and hard core developer who just keeps coding all the time :) She has successfully implemented the Test Driven Development for Mobile application and showcased it to client within the timeframe. She helped the Marriott team getting geared up for Bootstrap in very short time and helped the team with initial deliverables and bring it to speed. She always contributes to ideas, quick prototyping and educating team with development tools. She is really unstoppable and would like to appreciate her efforts. Keep up the good work.</p>"
+                }
+            ]
+        }
+    ]
+}

@@ -3,7 +3,7 @@
   "description": "Résumé for Nichole Mattera",
   "devDependencies": {
     "vite": "^4.0.4",
-    "vite-plugin-minify": "^1.5.2"
+    "vite-plugin-html": "^3.2.0"
   },
   "license": "ISC",
   "name": "nicholemattera.gay",
