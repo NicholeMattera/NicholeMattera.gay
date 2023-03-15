@@ -213,6 +213,7 @@ section.about p:last-child {
 
     header .subtitle {
         margin: 0 0 10px;
+        text-align: center;
     }
 
     main {

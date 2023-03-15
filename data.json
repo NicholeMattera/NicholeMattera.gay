@@ -5,6 +5,8 @@
     "about": {
         "image": "/images/nichole.webp",
         "imageAlt": "Selfie of Nichole Mattera",
+        "imageHeight": "256px",
+        "imageWidth": "192px",
         "description": "<p>I've been interested in and passionate about programming since I was a kid. I started tinkering on an old 486 laptop with Borland C++ modifying examples to make fake installation applications. Once I got my Sony PSP in high school, I created and released homebrew applications. With that experience, I got a job out of high school with PosiMotion.</p><p>Today, I still have a passion for programming with plenty of side projects outside of work, such as Pridful.li and my Nintendo Switch homebrew applications. I have also picked up a few more hobbies, such as rock climbing, hiking, and photography. In my free time, I also volunteer with Open Arms of Minnesota, helping to provide nourishing meals to critically ill individuals and their families.</p>"
     },
     "experiences": [
