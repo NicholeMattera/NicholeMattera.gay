@@ -19,8 +19,8 @@ const titleAnimationEnd = () => {
     animation = ''
 }
 
-window.addEventListener('load', animate)
-window.addEventListener('focus', animate)
-title.addEventListener('mouseover', animate)
-title.addEventListener('touchstart', animate)
-title.addEventListener('animationend', titleAnimationEnd)
+window.addEventListener('load', animate, { passive: true })
+window.addEventListener('focus', animate, { passive: true })
+title.addEventListener('mouseover', animate, { passive: true })
+title.addEventListener('touchstart', animate, { passive: true })
+title.addEventListener('animationend', titleAnimationEnd, { passive: true })

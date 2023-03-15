@@ -29,6 +29,6 @@ const seeMoreHeightCheck = () => {
 seeMoreHeightCheck()
 document.querySelectorAll('.see-more').forEach((seeMore) => {
     const button = seeMore.querySelector(':scope > button')
-    button.addEventListener('click', () => seeMoreExpand(seeMore, true))
+    button.addEventListener('click', () => seeMoreExpand(seeMore, true), { passive: true })
 })
-window.addEventListener('resize', seeMoreHeightCheck)
+window.addEventListener('resize', seeMoreHeightCheck, { passive: true })
