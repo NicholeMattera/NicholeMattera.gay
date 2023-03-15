@@ -18,6 +18,7 @@ header {
     position: sticky;
     top: 0;
     width: 100%;
+    z-index: 2;
 }
 
 header .title {
@@ -91,20 +92,33 @@ main {
     max-width: 1600px;
     padding: 20px;
     width: 100%;
+    z-index: 1;
 }
 
-main div {
+main > div {
     flex: 1 1 50%;
 }
 
-main section {
+section a {
+    color: #FFF;
+}
+
+section a:focus {
+    border-radius: 3px;
+    outline-color: #FFF;
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+section {
     background: #212121;
     border-radius: 8px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
 }
 
-main section h2 {
+section h2 {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -112,60 +126,68 @@ main section h2 {
     padding: 10px;
 }
 
-main section .content {
+section p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 5px;
+}
+
+section .divider {
+    background: linear-gradient(to right, #E40303, #FF8C00, #FFED00, #008026, #24408E, #732982);
+    height: 5px;
+    width: 100%;
+}
+
+section .content {
     padding: 10px 10px 10px;
 }
 
-main section .content.red {
-    border-top: 5px solid #E40303;
-}
-
-main section .content.orange {
-    border-top: 5px solid #FF8C00;
-}
-
-main section .content.yellow {
-    border-top: 5px solid #FFED00;
-}
-
-main section .content.green {
-    border-top: 5px solid #008026;
-}
-
-main section .content.blue {
-    border-top: 5px solid #24408E;
-}
-
-main section .content.purple {
-    border-top: 5px solid #732982;
-}
-
-main section h3 {
+section h3 {
     margin: 0 0 15px;
 }
 
-main section dl {
+section dl {
     margin: 0 0 0 20px;
 }
 
-main section dt {
+section dt {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 16px;
     font-weight: 700;
+    line-height: 26px;
     margin-bottom: 5px;
 }
 
-main section dd {
+section dd {
     font-size: 14px;
     line-height: 20px;
     margin: 0 0 20px 20px;
 }
 
-main section dd p {
+section dd p {
     margin: 0 0 5px;
 }
 
-main section dd p:last-child {
+section dd p:last-child {
+    margin: 0;
+}
+
+section.about .content {
+    align-items: center;
+    display: flex;
+}
+
+section.about img {
+    border-radius: 4px;
+    margin-right: 20px;
+}
+
+section.about p {
+    text-indent: 20px;
+    margin-bottom: 20px;
+}
+
+section.about p:last-child {
     margin: 0;
 }
 
@@ -196,5 +218,15 @@ main section dd p:last-child {
     main {
         flex-direction: column;
         gap: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    section.about .content {
+        flex-direction: column;
+    }
+
+    section.about img {
+        margin: 20px 0;
     }
 }

@@ -67,6 +67,8 @@ export default defineConfig({
     plugins: [
         createHtmlPlugin({
             minify: true,
+            entry: 'main.js',
+            template: 'index.html',
             inject: {
                 data: processData(data)
             }

@@ -1,0 +1,65 @@
+.see-more {
+    position: relative;
+}
+
+.see-more.collapsed {
+    height: 88px;
+}
+
+.see-more.collapsed .see-more-content {
+    max-height: 42px;
+    overflow: hidden;
+}
+
+.see-more button {
+    background: #212121;
+    border: 2px solid #FFF;
+    border-radius: 3px;
+    bottom: 0;
+    color: #FFF;
+    display: none;
+    font-weight: 500;
+    padding: 8px 22px;
+    position: absolute;
+    right: 0;
+    visibility: hidden;
+}
+
+
+.see-more button:hover, .see-more button:focus {
+    background: #FFF;
+    color: #212121;
+}
+
+.see-more button:hover {
+    cursor: pointer;
+}
+
+.see-more button:focus {
+    outline-color: #FFF;
+    outline-offset: 2px;
+    outline-style: solid;
+    outline-width: 2px;
+}
+
+.see-more.collapsed button {
+    display: block;
+    visibility: visible;
+}
+
+@media (prefers-color-scheme: light) {
+    .see-more button {
+        background: #E8E8E8;
+        border-color: #000;
+        color: #000;
+    }
+
+    .see-more button:hover, .see-more button:focus {
+        background: #000;
+        color: #E8E8E8;
+    }
+
+    .see-more button:focus {
+        outline-color: #000;
+    }
+}

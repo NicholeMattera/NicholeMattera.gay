@@ -1,89 +1,92 @@
 {
     "title": "Nichole Mattera",
-    "subtitle": "Full-Stack Web, Mobile, &amp; Homebrew Engineer",
+    "subtitle": "Full-Stack Web, Native Mobile, &amp; Homebrew Engineer",
     "description": "Résumé for Nichole Mattera",
+    "about": {
+        "image": "/images/nichole.webp",
+        "imageAlt": "Selfie of Nichole Mattera",
+        "description": "<p>I've been interested in and passionate about programming since I was a kid. I started tinkering on an old 486 laptop with Borland C++ modifying examples to make fake installation applications. Once I got my Sony PSP in high school, I created and released homebrew applications. With that experience, I got a job out of high school with PosiMotion.</p><p>Today, I still have a passion for programming with plenty of side projects outside of work, such as Pridful.li and my Nintendo Switch homebrew applications. I have also picked up a few more hobbies, such as rock climbing, hiking, and photography. In my free time, I also volunteer with Open Arms of Minnesota, helping to provide nourishing meals to critically ill individuals and their families.</p>"
+    },
     "experiences": [
         {
-            "organization": "Pendo.io, Inc.",
+            "organization": "Pendo.io",
+            "logo": "",
+            "logoAlt": "",
             "roles": [
                 {
                     "title": "Staff Front End Engineer",
                     "start": "2023-01",
-                    "description": ""
+                    "description": "<p>I continued for a few months on the team responsible for Data Explorer once the Tech Lead returned from paternity leave. For the transition, I documented all the process changes and everything the team and squad had accomplished while they were out to help get them back up to speed faster. I have now transitioned to the team responsible for Integrations, the public API, and Webhooks.</p>"
                 },
                 {
                     "title": "Staff Front End Engineer, Tech Lead",
                     "start": "2022-02",
                     "end": "2023-01",
-                    "description": ""
+                    "description": "<p>I continued to lead the team responsible for Workflows in Pendo's Adopt product. In my time as Tech Lead for this team, we delivered multiple features on time, such as Workflows for Recurring Processes, the ability to Segment by Workflow, and the ability to Visualize Progress Over Time.</p><p>I then proceeded to be the temporary Tech Lead for the team responsible for Data Explorer in Pendo's Engage product while their Tech Lead was out on paternity leave. While being Tech Lead on that team, I helped improve the team's and squad's process by implementing a fixed template and strategy of documenting our Epics into Confluence. In addition, I worked on reducing the number of meetings between team leadership to allow the Tech Lead to work more with the team. During my time as Tech Lead for this team, we delivered General Improvements to Data Explorer, the ability to search and view Metadata Values in the Segment Builder, and added functionality to filter by Event Properties in Data Explorer.</p>"
                 },
                 {
                     "title": "GSRM Affinity Group Co-Chair",
                     "start": "2021-02",
                     "end": "2022-04",
-                    "description": "<p>As the co-chair of the GSRM affinity group at Pendo I helped plan out monthly meetings, and events with our community. I also aided in educating Pendozers both in and outside of the group on important GSRM issues, such as daily slack posts for Transgender Awareness Week, Aromantic Spectrum Awareness Week, and much more. Being a co-chair also made me part of Pendo's Diversity Advisory Board, where I would advocate for changes not just for the GSRM group, but for other minority groups as well.</p>"
+                    "description": "<p>As the co-chair of the GSRM affinity group at Pendo, I helped plan monthly meetings and events with our community. I also aided in educating Pendozers both in and outside of the group on important GSRM issues, such as daily slack posts for Transgender Awareness Week, Aromantic Spectrum Awareness Week, and much more. Being a co-chair also made me part of Pendo's Diversity Advisory Board, where I would advocate for changes for the GSRM group.</p>"
                 },
                 {
                     "title": "Senior Front End Engineer, Tech Lead",
                     "start": "2021-08",
                     "end": "2022-02",
-                    "description": "<p>I came in as the Tech Lead for a brand new team for Pendo's Adopt product. We were able to deliver all of Workflows in a quarter in time for the release of the Adopt product and the annual Company Kick-Off event.</p>"
+                    "description": "<p>I was allowed to lead a brand new team for Pendo's Adopt product. This team was focused on the Workflows feature, which would allow our Adopt users to gather valuable insight into their business processes. This highly efficient team delivered everything we set out to do in a quarter in time for the release of the Adopt product at the annual Company Kick-Off event.</p>"
                 },
                 {
                     "title": "Senior Front End Engineer",
                     "start": "2020-06",
                     "end": "2021-08",
-                    "description": "<p>I came in at the tail end of a project to be able to subscribe to account and visitor reports. Even then I was able to help out on the final finishing touches on the email templates to get it ready for release. After that I was apart of the team that worked on Core Events. We were able to introduce a major new feature to the platform, just in time for the companies annual event Pendomonium.</p>"
+                    "description": "<p>I came in at the tail end of a project to allow customers to subscribe to account and visitor reports and receive weekly email updates. Even then, I helped with the final finishing touches on the email templates to prepare them for release. After that project, we continued working on Core Events, Core Event Dashboard widgets, Core Event Dropdowns, Product Engagement Score, and Product Engagement Score drill-downs. I then moved on to another team working on our Adopt product, specifically Adopt Studio, getting that project off the ground and primarily working around the WYSIWYG.</p>"
                 }
             ]
         },
         {
-            "organization": "Cision US, Inc.",
+            "organization": "Cision",
+            "logo": "",
+            "logoAlt": "",
             "roles": [
                 {
                     "title": "Software Engineer",
                     "start": "2016-09",
                     "end": "2020-06",
-                    "description": "<p>I started off just working on the frontend of the analytics section of the Cision Communications Cloud application. I've moved into a more of a full-stack role working on both the Angular.js frontend and C# backend. I've helped write the social analysis tracking, the dashboard system, and the earned/placed impact areas of the app. I've recently moved on to working on their recently acquired platform TrendKite, which uses ReactJS on the frontend with Java/Groovey on the backend.</p>"
+                    "description": "<p>When I joined, I started working in the frontend of the Analytics area for our main product, Cision Communication Cloud. While at Cision, I moved into more of a full-stack role working on both the Angular.js frontend and C# backend. At Cision, I helped on the Analytics Dashboard, Social Analytics Tracking, and the Earned/Placed Impact areas of Cision Communication Cloud. Near the end of my time at Cision, we acquired TrendKite, where I worked on their ReactJS frontend, specifically in the Email Marketing area.</p>"
                 }
             ]
         },
         {
-            "organization": "Mindtree, Ltd.",
+            "organization": "Mindtree",
+            "logo": "",
+            "logoAlt": "",
             "roles": [
                 {
                     "title": "Techinical Project Lead",
-                    "start": "2015-08",
+                    "start": "2014-01",
                     "end": "2016-09",
                     "description": "<p>Was lead programmer on most mobile projects at Mindtree's Gainesville Delivery Center. Some of my day-to-day responsibilities included:</p><ul><li>Estimations for statements of work.</li><li>Creating build processes for the team.</li><li>Setting up continuous integration using Git and Jenkins.</li><li>Meeting with clients to help the business analysis flush out user stories.</li><li>Setting up basic frameworks and design database structures.</li><li>Managing code quality.</li><li>Conducting technical interviews.</li><li>raining/teaching junior programmers. (iOS, Android, HTML, CSS, JS, TDD)</li><li>Helping clients adapt to agile methodology.</li></ul>"
-                },
-                {
-                    "title": "Module Lead",
-                    "start": "2014-01",
-                    "end": "2015-08",
-                    "description": ""
                 }
             ]
         },
         {
-            "organization": "Zgraph, Inc.",
+            "organization": "Zgraph",
+            "logo": "",
+            "logoAlt": "",
             "roles": [
                 {
                     "title": "Lead Internet Engineer",
-                    "start": "2013-03",
+                    "start": "2011-11",
                     "end": "2014-01",
                     "description": "<p>I was the Lead Internet Engineer at Zgraph, Inc, and was the lead programmer on many of the large projects that came into Zgraph. I was also in charge of making sure the eight servers owned by Zgraph at the time stayed up and healthy.</p>"
-                },
-                {
-                    "title": "Internet Engineer",
-                    "start": "2011-11",
-                    "end": "2013-03",
-                    "description": ""
                 }
             ]
         },
         {
-            "organization": "PosiMotion, LLC.",
+            "organization": "PosiMotion",
+            "logo": "",
+            "logoAlt": "",
             "roles": [
                 {
                     "title": "Lead Programmer",
@@ -96,25 +99,29 @@
     ],
     "publications": [
         {
-            "name": "Creating Delightful Graphs using HTML5 Canvas"
+            "name": "Pendo Developers Blog - Creating Delightful Graphs using HTML5 Canvas",
+            "link": "https://developers.pendo.io/engineering/creating-delightful-graphs-using-html-5-canvas/"
         },
         {
-            "name": "Chapter 5 - iPhone Games Project"
+            "name": "iPhone Games Project - Chapter 5 - Starting with a Game Design Document: A Methodology for Success",
+            "link": "https://books.google.com/books?id=84yR6Re7RwAC&hl=en"
         }
     ],
     "education": [
         {
             "name": "A.S. in Computer Programming and Analysis",
-            "description": "Graduated with honors"
+            "description": "<p>I was dual enrolled for my Junior and Senior years of High School. I continued taking classes afterward to wrap up the degree and graduated with honors.</p>"
         },
         {
             "name": "A.S. Certificate in Computer Programming",
-            "description": "Graduated with honors"
+            "description": "<p>This certificate had similar course requirements to my A.S. Degree, so when graduating, I also qualified for this.</p>"
         }
     ],
     "certifications": [
         {
-            "name": "Pendo Essentials"
+            "name": "Pendo Essentials",
+            "description": "<p>I completed the Pendo Essentials class with a certified instructor. The Pendo Essentials certification certifies that I can install Pendo, tag features, and pages, create and use segments, implement guides and layouts, and interpret behavioral analytics.</p>",
+            "link": "https://www.credly.com/badges/cafd0eb7-6a6a-4e66-8e9f-a41d4b1b1bf9"
         },
         {
             "name": "Orchestra Commerce Platform Technical Training"
@@ -138,21 +145,6 @@
             "name": "Cision Communication Cloud",
             "type": "Web App",
             "description": "<p>Worked on the Analytic Dashboards, Impact, and Report Generation.</p>"
-        },
-        {
-            "name": "NX-VVVVVV",
-            "type": "Nintendo Switch Homebrew",
-            "description": "<p>Port to the Nintendo Switch, and contributed some improvements back upstream.</p>"
-        },
-        {
-            "name": "Kosmos Updater",
-            "type": "Nintendo Switch Homebrew",
-            "description": "<p>Homebrew application to update all the custom firmware files on automatically from your console.</p>"
-        },
-        {
-            "name": "Simple TV Launcher",
-            "type": "Android Launcher",
-            "description": "<p>Replacement launcher for the original Google TV and Android TV</p>"
         },
         {
             "name": "Volvo Scout Master & Mack CV360",
@@ -187,7 +179,7 @@
     ],
     "awards": [
         {
-            "organization": "Pendo.io, Inc.",
+            "organization": "Pendo.io",
             "honors": [
                 {
                     "name": "Most Win Together Panks for Q3FY22",
@@ -202,7 +194,7 @@
             ]
         },
         {
-            "organization": "Mindtree, Ltd.",
+            "organization": "Mindtree",
             "honors": [
                 {
                     "name": "A-Team",

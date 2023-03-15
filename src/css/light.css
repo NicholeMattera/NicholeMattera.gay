@@ -1,11 +1,11 @@
 @media (prefers-color-scheme: light) {
     html, body {
-        background: #E8E8E8;
+        background: #DEDEDE;
         color: #000;
     }
 
     header {
-        background: #DEDEDE;
+        background: #E8E8E8;
     }
 
     header .title {
@@ -18,14 +18,22 @@
 
     header nav a:hover, header nav a:focus {
         background-color: #000;
-        color: #DEDEDE;
+        color: #E8E8E8;
     }
 
     header nav a:focus {
         outline-color: #000;
     }
 
-    main section {
-        background: #DEDEDE;
+    section a {
+        color: #000;
+    }
+
+    section a:focus {
+        outline-color: #000;
+    }
+
+    section {
+        background: #E8E8E8;
     }
 }

@@ -21,6 +21,7 @@
         <style>
             @import url('./css/font-awesome.css');
             @import url('./css/fonts.css');
+            @import url('./css/see-more.css');
             @import url('./css/main.css');
             @import url('./css/light.css');
         </style>
@@ -54,12 +55,32 @@
 
         <main>
             <div>
+                <section class="about">
+                    <h2>About Me</h2>
+
+                    <div class="divider"></div>
+
+                    <div class="content">
+                        <img src="<%- about.image %>" alt="<%- about.imageAlt %>" />
+
+                        <div class="description">
+                            <%- about.description %>
+                        </div>
+                    </div>
+                </section>
+
                 <section>
                     <h2>Work Experience</h2>
 
-                    <div class="content red">
+                    <div class="divider"></div>
+
+                    <div class="content">
                         <% experiences.forEach(function(experience){ %>
+                        <% if(experience.logo){ %>
+                        <h3><img src="<%- publication.logo %>" alt="<%- publication.logoAlt %>"></a><%- experience.organization %></h3>
+                        <% } else { %>
                         <h3><%- experience.organization %></h3>
+                        <% } %>
                         <dl>
                             <% experience.roles.forEach(function(role){ %>
                             <dt><%- role.title %></dt>
@@ -69,7 +90,15 @@
                                 <% } else { %>
                                 <p><time datetime="<%- role.start %>"><%- role.startText %></time> - <time datetime="<%- role.end %>"><%- role.endText %></time> (<%- role.timeSpan %>)</p>
                                 <% } %>
-                                <%- role.description %>
+                                <div class="see-more collapsed">
+                                    <div class="see-more-content">
+                                        <%- role.description %>
+                                    </div>
+
+                                    <button>
+                                        See More
+                                    </button>
+                                </div>
                             </dd>
                             <% }); %>
                         </dl>
@@ -81,12 +110,26 @@
                 <section>
                     <h2>Publications</h2>
 
-                    <div class="content orange">
+                    <div class="divider"></div>
+
+                    <div class="content">
                         <dl>
                             <% publications.forEach(function(publication){ %>
+                            <% if(publication.link){ %>
+                            <dt><a href="<%- publication.link %>" target="_blank"><%- publication.name %></a></dt>
+                            <% } else { %>
                             <dt><%- publication.name %></dt>
+                            <% } %>
                             <dd>
-                                <%- publication.description %>
+                                <div class="see-more collapsed">
+                                    <div class="see-more-content">
+                                        <%- publication.description %>
+                                    </div>
+
+                                    <button>
+                                        See More
+                                    </button>
+                                </div>
                             </dd>
                             <% }); %>
                         </dl>
@@ -96,11 +139,23 @@
                 <section>
                     <h2>Education</h2>
 
-                    <div class="content yellow">
+                    <div class="divider"></div>
+
+                    <div class="content">
                         <dl>
                             <% education.forEach(function(degree){ %>
                             <dt><%- degree.name %></dt>
-                            <dd><%- degree.description %></dd>
+                            <dd>
+                                <div class="see-more collapsed">
+                                    <div class="see-more-content">
+                                        <%- degree.description %>
+                                    </div>
+
+                                    <button>
+                                        See More
+                                    </button>
+                                </div>
+                            </dd>
                             <% }); %>
                         </dl>
                     </div>
@@ -109,12 +164,26 @@
                 <section>
                     <h2>Certifications</h2>
 
-                    <div class="content green">
+                    <div class="divider"></div>
+
+                    <div class="content">
                         <dl>
                             <% certifications.forEach(function(certificate){ %>
+                            <% if(certificate.link){ %>
+                            <dt><a href="<%- certificate.link %>" target="_blank"><%- certificate.name %></a></dt>
+                            <% } else { %>
                             <dt><%- certificate.name %></dt>
+                            <% } %>
                             <dd>
-                                <%- certificate.description %>
+                                <div class="see-more collapsed">
+                                    <div class="see-more-content">
+                                        <%- certificate.description %>
+                                    </div>
+
+                                    <button>
+                                        See More
+                                    </button>
+                                </div>
                             </dd>
                             <% }); %>
                         </dl>
@@ -126,12 +195,22 @@
                 <section>
                     <h2>Projects</h2>
 
-                    <div class="content blue">
+                    <div class="divider"></div>
+
+                    <div class="content">
                         <dl>
                             <% projects.forEach(function(project){ %>
                             <dt><%- project.name %> (<%- project.type %>)</dt>
                             <dd>
-                                <%- project.description %>
+                                <div class="see-more collapsed">
+                                    <div class="see-more-content">
+                                        <%- project.description %>
+                                    </div>
+
+                                    <button>
+                                        See More
+                                    </button>
+                                </div>
                             </dd>
                             <% }); %>
                         </dl>
@@ -141,7 +220,9 @@
                 <section>
                     <h2>Awards</h2>
 
-                    <div class="content purple">
+                    <div class="divider"></div>
+
+                    <div class="content">
                         <% awards.forEach(function(award){ %>
                         <h3><%- award.organization %></h3>
                         <dl>
@@ -149,7 +230,16 @@
                             <dt><%- honor.name %></dt>
                             <dd>
                                 <p><time datetime="<%- honor.date %>"><%- honor.dateText %></time></p>
-                                <%- honor.description %>
+                                
+                                <div class="see-more collapsed">
+                                    <div class="see-more-content">
+                                        <%- honor.description %>
+                                    </div>
+
+                                    <button>
+                                        See More
+                                    </button>
+                                </div>
                             </dd>
                             <% }); %>
                         </dl>
@@ -158,33 +248,5 @@
                 </section>
             </div>
         </main>
-
-        <script type="text/javascript">
-            const animations = [ 'asexual', 'biromantic', 'demigirl', 'nonbinary', 'panromantic', 'pride', 'queer', 'transgender' ]
-            let animation = ''
-            const title = document.querySelector('.title')
-
-            const animate = () => {
-                if (animation != '') {
-                    return
-                }
-
-                animation = animations[Math.floor(Math.random() * animations.length)]
-
-                title.classList.add('animating')
-                title.style.backgroundImage = `url(/images/${animation}.svg)`
-            }
-
-            const titleAnimationEnd = () => {
-                title.classList.remove('animating')
-                title.style.backgroundImage = ''
-                animation = ''
-            }
-
-            window.addEventListener('load', animate)
-            title.addEventListener('mouseover', animate)
-            title.addEventListener('touchstart', animate)
-            title.addEventListener('animationend', titleAnimationEnd)
-        </script>
     </body>
 </html>
