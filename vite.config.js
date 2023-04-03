@@ -15,7 +15,7 @@ export default defineConfig({
                 {
                     entry: 'src/resume.js',
                     filename: 'index.html',
-                    template: 'resume.html',
+                    template: 'index.html',
                     injectOptions: {
                         data: resumeData,
                         ejsOptions: {
