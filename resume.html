@@ -13,54 +13,32 @@
         <meta property="og:description" content="<%- description %>">
         <meta property="og:url" content="https://nicholemattera.gay">
 
-        <link rel="apple-touch-icon" href="/icons/icon-192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
         <link rel="manifest" href="/manifest.json">
 
         <title><%- title %></title>
 
         <style>
-            @import url('./css/font-awesome.css');
-            @import url('./css/fonts.css');
-            @import url('./css/see-more.css');
-            @import url('./css/main.css');
-            @import url('./css/light.css');
+            @import url('./src/css/font-awesome.css');
+            @import url('./src/css/fonts.css');
+            @import url('./src/css/see-more.css');
+            @import url('./src/css/main.css');
+            @import url('./src/css/resume.css');
         </style>
     </head>
     <body>
-        <header>
-            <h1 class="title"><%- title %></h1>
-
-            <p class="subtitle"><%- subtitle %></p>
-
-            <nav>
-                <a href="https://linkedin.com/in/nicholemattera" target="_blank">
-                    <span class="fa-sr-only">LinkedIn Opens in new window</span>
-                    <span class="fab fa-li icon"></span>
-                    <span class="far fa-ext new-window-icon"></span>
-                </a>
-
-                <a href="https://github.com/NicholeMattera" target="_blank">
-                    <span class="fa-sr-only">GitHub Opens in new window</span>
-                    <span class="fab fa-gh icon"></span>
-                    <span class="far fa-ext new-window-icon"></span>
-                </a>
-
-                <a href="https://git.nicholemattera.gay" target="_blank">
-                    <span class="fa-sr-only">Portfolio Opens in new window</span>
-                    <span class="far fa-merge icon"></span>
-                    <span class="far fa-ext new-window-icon"></span>
-                </a>
-            </nav>
-        </header>
+        <%- include('header.ejs') %>
 
         <main>
             <div>
-                <section class="about">
-                    <h2>About Me</h2>
+                <section class="card about">
+                    <h2 class="card-header">About Me</h2>
 
-                    <div class="divider"></div>
+                    <div class="card-divider"></div>
 
-                    <div class="content">
+                    <div class="card-body">
                         <img src="<%- about.image %>" width="<%- about.imageWidth %>" height="<%- about.imageHeight %>" alt="<%- about.imageAlt %>" />
 
                         <div class="description">
@@ -69,12 +47,12 @@
                     </div>
                 </section>
 
-                <section>
-                    <h2>Work Experience</h2>
+                <section class="card">
+                    <h2 class="card-header">Work Experience</h2>
 
-                    <div class="divider"></div>
+                    <div class="card-divider"></div>
 
-                    <div class="content">
+                    <div class="card-body">
                         <% experiences.forEach(function(experience){ %>
                         <% if(experience.logo){ %>
                         <h3><img src="<%- publication.logo %>" alt="<%- publication.logoAlt %>"></a><%- experience.organization %></h3>
@@ -107,12 +85,12 @@
                     </div>
                 </section>
 
-                <section>
-                    <h2>Publications</h2>
+                <section class="card">
+                    <h2 class="card-header">Publications</h2>
 
-                    <div class="divider"></div>
+                    <div class="card-divider"></div>
 
-                    <div class="content">
+                    <div class="card-body">
                         <dl>
                             <% publications.forEach(function(publication){ %>
                             <% if(publication.link){ %>
@@ -136,12 +114,12 @@
                     </div>
                 </section>
 
-                <section>
-                    <h2>Education</h2>
+                <section class="card">
+                    <h2 class="card-header">Education</h2>
 
-                    <div class="divider"></div>
+                    <div class="card-divider"></div>
 
-                    <div class="content">
+                    <div class="card-body">
                         <dl>
                             <% education.forEach(function(degree){ %>
                             <dt><%- degree.name %></dt>
@@ -161,12 +139,12 @@
                     </div>
                 </section>
 
-                <section>
-                    <h2>Certifications</h2>
+                <section class="card">
+                    <h2 class="card-header">Certifications</h2>
 
-                    <div class="divider"></div>
+                    <div class="card-divider"></div>
 
-                    <div class="content">
+                    <div class="card-body">
                         <dl>
                             <% certifications.forEach(function(certificate){ %>
                             <% if(certificate.link){ %>
@@ -192,12 +170,12 @@
             </div>
 
             <div>
-                <section>
-                    <h2>Projects</h2>
+                <section class="card">
+                    <h2 class="card-header">Projects</h2>
 
-                    <div class="divider"></div>
+                    <div class="card-divider"></div>
 
-                    <div class="content">
+                    <div class="card-body">
                         <dl>
                             <% projects.forEach(function(project){ %>
                             <dt><%- project.name %> (<%- project.type %>)</dt>
@@ -217,12 +195,12 @@
                     </div>
                 </section>
 
-                <section>
-                    <h2>Awards</h2>
+                <section class="card">
+                    <h2 class="card-header">Awards</h2>
 
-                    <div class="divider"></div>
+                    <div class="card-divider"></div>
 
-                    <div class="content">
+                    <div class="card-body">
                         <% awards.forEach(function(award){ %>
                         <h3><%- award.organization %></h3>
                         <dl>

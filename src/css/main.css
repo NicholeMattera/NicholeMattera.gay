@@ -61,6 +61,10 @@ header nav a {
     text-decoration: none;
 }
 
+header nav a.selected {
+    border-bottom: 3px solid #FFF;
+}
+
 header nav a:hover, header nav a:focus {
     background-color: #FFF;
     color: #212121;
@@ -99,11 +103,11 @@ main > div {
     flex: 1 1 50%;
 }
 
-section a {
+main a {
     color: #FFF;
 }
 
-section a:focus {
+main a:focus {
     border-radius: 3px;
     outline-color: #FFF;
     outline-offset: 2px;
@@ -111,14 +115,25 @@ section a:focus {
     outline-width: 2px;
 }
 
-section {
+main p {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 0 5px;
+}
+
+.card {
     background: #212121;
     border-radius: 8px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
 }
 
-section h2 {
+.card-header {
+    align-items: flex-end;
+    display: flex;
+}
+
+h2.card-header, .card-header h2 {
     font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 700;
@@ -126,69 +141,19 @@ section h2 {
     padding: 10px;
 }
 
-section p {
+.card-header p {
+    flex: 1 1 auto;
+    font-family: Inter, Arial, Helvetica, sans-serif;
     font-size: 14px;
-    line-height: 20px;
-    margin: 0 0 5px;
+    margin: 0;
+    padding: 10px;
+    text-align: right;
 }
 
-section .divider {
+.card-divider {
     background: linear-gradient(to right, #E40303, #FF8C00, #FFED00, #008026, #24408E, #732982);
     height: 5px;
     width: 100%;
-}
-
-section .content {
-    padding: 10px 10px 10px;
-}
-
-section h3 {
-    margin: 0 0 15px;
-}
-
-section dl {
-    margin: 0 0 0 20px;
-}
-
-section dt {
-    font-family: Inter, Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    font-weight: 700;
-    line-height: 26px;
-    margin-bottom: 5px;
-}
-
-section dd {
-    font-size: 14px;
-    line-height: 20px;
-    margin: 0 0 20px 20px;
-}
-
-section dd p {
-    margin: 0 0 5px;
-}
-
-section dd p:last-child {
-    margin: 0;
-}
-
-section.about .content {
-    align-items: center;
-    display: flex;
-}
-
-section.about img {
-    border-radius: 4px;
-    margin-right: 20px;
-}
-
-section.about p {
-    text-indent: 20px;
-    margin-bottom: 20px;
-}
-
-section.about p:last-child {
-    margin: 0;
 }
 
 @keyframes slide-right-title {
@@ -197,7 +162,7 @@ section.about p:last-child {
     }
 
     100% {
-        background-position: 187px 0;
+        background-position: 280px 0;
     }
 }
 
@@ -222,12 +187,46 @@ section.about p:last-child {
     }
 }
 
-@media screen and (max-width: 640px) {
-    section.about .content {
-        flex-direction: column;
+@media (prefers-color-scheme: light) {
+    html, body {
+        background: #DEDEDE;
+        color: #000;
     }
 
-    section.about img {
-        margin: 20px 0;
+    header {
+        background: #E8E8E8;
+    }
+
+    header .title {
+        background-color: #000;
+    }
+
+    header nav a {
+        color: #000;
+    }
+
+    header nav a.selected {
+        border-bottom: 3px solid #000;
+    }
+
+    header nav a:hover, header nav a:focus {
+        background-color: #000;
+        color: #E8E8E8;
+    }
+
+    header nav a:focus {
+        outline-color: #000;
+    }
+
+    .card {
+        background: #E8E8E8;
+    }
+
+    section a {
+        color: #000;
+    }
+
+    section a:focus {
+        outline-color: #000;
     }
 }

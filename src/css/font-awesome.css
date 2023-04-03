@@ -1,29 +1,9 @@
 @font-face {
-    font-family: "Font Awesome 6 Brands";
-    font-style: normal;
-    font-weight: 400;
-    font-display: block;
-    src: url("../fonts/fa-brands-400.woff2") format("woff2");
-}
-
-@font-face {
     font-family: "Font Awesome 6 Pro";
     font-style: normal;
     font-weight: 400;
     font-display: block;
     src: url("../fonts/fa-regular-400.woff2") format("woff2");
-}
-
-.fab {
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: var(--fa-display, inline-block);
-    font-family: 'Font Awesome 6 Brands';
-    font-style: normal;
-    font-variant: normal;
-    font-weight: 400;
-    line-height: 1;
-    text-rendering: auto;
 }
 
 .far {
@@ -40,18 +20,6 @@
 
 .fa-ext::before {
     content: "\f08e";
-}
-
-.fa-gh::before {
-    content: "\f113";
-}
-
-.fa-li::before {
-    content: "\f0e1";
-}
-
-.fa-merge::before {
-    content: "\f387";
 }
 
 .fa-sr-only {

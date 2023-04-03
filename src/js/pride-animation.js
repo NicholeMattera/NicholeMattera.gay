@@ -10,7 +10,7 @@ const animate = () => {
     animation = animations[Math.floor(Math.random() * animations.length)]
 
     title.classList.add('animating')
-    title.style.backgroundImage = `url(/images/${animation}.svg)`
+    title.style.backgroundImage = `url(/images/pride-banners/${animation}.svg)`
 }
 
 const titleAnimationEnd = () => {

@@ -1,21 +1,18 @@
 {
     "background_color": "#212121",
     "display": "minimal-ui",
-    "icons": [
-        {
-            "src": "/icons/icon-192.png",
-            "type": "image/png",
-            "sizes": "192x192",
-            "purpose": "any maskable"
-        },
-        {
-            "src": "/icons/icon-512.png",
-            "type": "image/png",
-            "sizes": "512x512",
-            "purpose": "any maskable"
-        }
-    ],
-    "name": "Nichole Mattera: Résumé",
+    "icons": [{
+        "src": "/images/icons/android-chrome-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+    }, {
+        "src": "/images/icons/android-chrome-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+    }],
+    "name": "Nichole \"Nickel\" Mattera",
     "short_name": "Nichole Mattera",
     "start_url": "/",
     "theme_color": "#4A148C"
