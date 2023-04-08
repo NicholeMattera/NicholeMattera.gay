@@ -7,6 +7,13 @@ const data = {
     finished: [
         {
             completionDate: '2023-03-24',
+            coverImage: '/images/book-covers/ace.webp',
+            name: 'Ace: What Asexuality Reveals About Desire, Society, and the Meaning of Sex',
+            author: 'Angela Chen',
+            tags: ['loved', 'lgbt']
+        },
+        {
+            completionDate: '2023-03-24',
             coverImage: '/images/book-covers/subtle-art-of-not-giving-a-f-ck.webp',
             name: 'The Subtle Art of Not Giving a F*ck: A Counterintuitive Approach to Living a Good Life',
             author: 'Mark Manson',
@@ -57,21 +64,13 @@ const data = {
     ],
     readingNow: [
         {
-            coverImage: '/images/book-covers/ace.webp',
-            name: 'Ace: What Asexuality Reveals About Desire, Society, and the Meaning of Sex',
-            author: 'Angela Chen',
-            progress: 0.69,
-            tags: ['library', 'lgbt']
-        }
-    ],
-    toRead: [
-        {
             coverImage: '/images/book-covers/self-ish.webp',
             name: 'SELF-ish: A Transgender Awakening',
             author: 'Chloe Schwenke',
-            priority: true,
             tags: ['library', 'lgbt']
         },
+    ],
+    toRead: [
         {
             coverImage: '/images/book-covers/the-invisible-orientation.webp',
             name: 'The Invisible Orientation: An Introduction to Asexuality',
