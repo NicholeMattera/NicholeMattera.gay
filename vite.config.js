@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
-import bookshelfData from './data/bookshelf.js';
+import bookshelfData from './data/bookshelf.json';
+import commonData from './data/common.json';
 import resumeData from './data/resume.js';
 
 export default defineConfig({
@@ -28,7 +29,10 @@ export default defineConfig({
                     filename: 'bookshelf.html',
                     template: 'bookshelf.html',
                     injectOptions: {
-                        data: bookshelfData,
+                        data: {
+                            ...commonData,
+                            ...bookshelfData
+                        },
                         ejsOptions: {
                             views: ['partials']
                         }
