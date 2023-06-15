@@ -20,6 +20,7 @@ const data = {
                 {
                     title: 'Staff Front End Engineer',
                     start: '2023-01',
+                    end: '2023-06',
                     description: '<p>I continued for a few months on the team responsible for Data Explorer once the Tech Lead returned from paternity leave. For the transition, I documented all the process changes and everything the team and squad had accomplished while they were out to help get them back up to speed faster. I have now transitioned to the team responsible for Integrations, the public API, and Webhooks.</p>'
                 },
                 {
