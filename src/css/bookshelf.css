@@ -58,3 +58,40 @@
         background: #CDCDCD;
     }
 }
+
+@media screen and (max-width: 640px) {
+    .card-header p {
+        display: none;
+        visibility: hidden;
+    }
+
+    .book-details h3 {
+        text-align: center;
+    }
+
+    .book-details p {
+        text-align: center;
+    }
+    
+    .book-details .filler {
+        display: none;
+        flex: none;
+        visibility: hidden;
+    }
+
+    .book {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .book-tags {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-top: 8px
+    }
+
+    .book-tags li {
+        font-size: 12px;
+    }
+}
+
