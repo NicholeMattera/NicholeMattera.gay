@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+        <meta name="description" content="<%- description %>">
+        <meta name="theme-color" content="#4A148C"/>
+        <meta name="theme-color" media="(prefers-color-scheme: light)" content="#E1BEE7"/>
+        <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#4A148C"/>
+
+        <meta property="og:title" content="<%- title %>">
+        <meta property="og:description" content="<%- description %>">
+        <meta property="og:url" content="https://nicholemattera.gay">
+
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/icons/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/images/icons/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/images/icons/favicon-16x16.png">
+        <link rel="manifest" href="/manifest.json">
+
+        <title><%- title %></title>
+
+        <style>
+            @import url('./src/css/font-awesome.css');
+            @import url('./src/css/fonts.css');
+            @import url('./src/css/main.css');
+            @import url('./src/css/social.css');
+        </style>
+    </head>
+    <body>
+        <%- include('header.ejs') %>
+
+        <main class="social-container">
+            <ol class="social-list">
+                <% links.forEach(function(link) { %>
+                <li>
+                    <a href="<%- link.url %>" target="_blank">
+                        <%- link.title %>
+                        <span class="fa-sr-only">Portfolio Opens in new window</span>
+                        <span class="far fa-ext new-window-icon"></span>
+                    </a>
+                </li>
+                <% }); %>
+            </ol>
+        </main>
+    </body>
+</html>
