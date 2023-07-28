@@ -9,9 +9,21 @@ const data = {
         imageAlt: 'Selfie of Nichole Mattera',
         imageHeight: '256px',
         imageWidth: '192px',
-        description: '<p>I\'ve been interested in and passionate about programming since I was a kid. I started tinkering on an old 486 laptop with Borland C++ modifying examples to make fake installation applications. Once I got my Sony PSP in high school, I created and released homebrew applications. With that experience, I got a job out of high school with PosiMotion.</p><p>Today, I still have a passion for programming with plenty of side projects outside of work, such as Pridful.li and my Nintendo Switch homebrew applications. I have also picked up a few more hobbies, such as rock climbing, hiking, and photography. In my free time, I also volunteer with Open Arms of Minnesota, helping to provide nourishing meals to critically ill individuals and their families.</p>'
+        description: '<p>I\'ve been interested in and passionate about programming since I was a kid. I started tinkering on an old 486 laptop with Borland C++ modifying examples to make fake installation applications. Once I got my Sony PSP in high school, I created and released homebrew applications. With that experience, I got a job out of high school with PosiMotion.</p><p>Today, I still have a passion for programming with plenty of side projects outside of work, such as Outclimb, Prideful.li and my Nintendo Switch homebrew applications. I have also picked up a few more hobbies, such as rock climbing, hiking, and photography. In my free time, I also volunteer with Open Arms of Minnesota, helping to provide nourishing meals to critically ill individuals and their families.</p>'
     },
     experiences: [
+        {
+            organization: 'Nearpod',
+            logo: '',
+            logoAlt: '',
+            roles: [
+                {
+                    title: 'Staff Frontend Engineer',
+                    start: '2023-07',
+                    description: '<p>I joined the Core Platform team, working to help build a solid foundation and support the feature teams.</p>'
+                }
+            ]
+        },
         {
             organization: 'Pendo.io',
             logo: '',
@@ -21,13 +33,13 @@ const data = {
                     title: 'Staff Front End Engineer',
                     start: '2023-01',
                     end: '2023-06',
-                    description: '<p>I continued for a few months on the team responsible for Data Explorer once the Tech Lead returned from paternity leave. For the transition, I documented all the process changes and everything the team and squad had accomplished while they were out to help get them back up to speed faster. I have now transitioned to the team responsible for Integrations, the public API, and Webhooks.</p>'
+                    description: '<p>I continued for a few months on the team responsible for Data Explorer once the Tech Lead returned from paternity leave. For the transition, I documented all the process changes and everything the team and squad had accomplished while they were out to help get them back up to speed faster. I then transitioned to the team responsible for Integrations, the public API, and Webhooks, where I helped with the final touches on Data Sync. In addition, I supported their customers by fixing some long-standing bugs in a few of our key integrations. I also began upgrading the dependencies of their Resource Center integration repository.</p>'
                 },
                 {
                     title: 'Staff Front End Engineer, Tech Lead',
                     start: '2022-02',
                     end: '2023-01',
-                    description: '<p>I continued to lead the team responsible for Workflows in Pendo\'s Adopt product. In my time as Tech Lead for this team, we delivered multiple features on time, such as Workflows for Recurring Processes, the ability to Segment by Workflow, and the ability to Visualize Progress Over Time.</p><p>I then proceeded to be the temporary Tech Lead for the team responsible for Data Explorer in Pendo\'s Engage product while their Tech Lead was out on paternity leave. While being Tech Lead on that team, I helped improve the team\'s and squad\'s process by implementing a fixed template and strategy of documenting our Epics into Confluence. In addition, I worked on reducing the number of meetings between team leadership to allow the Tech Lead to work more with the team. During my time as Tech Lead for this team, we delivered General Improvements to Data Explorer, the ability to search and view Metadata Values in the Segment Builder, and added functionality to filter by Event Properties in Data Explorer.</p>'
+                    description: '<p>I continued to lead the team responsible for Workflows in Pendo\'s Adopt product. In my time as Tech Lead for this team, we delivered multiple features on time, such as Workflows for Recurring Processes, the ability to Segment by Workflow, and the ability to Visualize Progress Over Time. I then proceeded to be the temporary Tech Lead for the team responsible for Data Explorer in Pendo\'s Engage product while their Tech Lead was out on paternity leave. While being Tech Lead on that team, I helped improve the team\'s and squad\'s process by implementing a fixed template and strategy of documenting our Epics into Confluence. In addition, I worked on reducing the number of meetings between team leadership to allow the Tech Lead to work more with the team. During my time as Tech Lead for this team, we delivered General Improvements to Data Explorer, the ability to search and view Metadata Values in the Segment Builder, and added functionality to filter by Event Properties in Data Explorer.</p>'
                 },
                 {
                     title: 'GSRM Affinity Group Co-Chair',
@@ -39,7 +51,7 @@ const data = {
                     title: 'Senior Front End Engineer, Tech Lead',
                     start: '2021-08',
                     end: '2022-02',
-                    description: '<p>I was allowed to lead a brand new team for Pendo\'s Adopt product. This team was focused on the Workflows feature, which would allow our Adopt users to gather valuable insight into their business processes. This highly efficient team delivered everything we set out to do in a quarter in time for the release of the Adopt product at the annual Company Kick-Off event.</p>'
+                    description: '<p>I was allowed to lead a brand new team for Pendo\'s Adopt product. This team was focused on the Workflows feature, which would allow our Adopt users to gather valuable insight into their business processes. This highly efficient team delivered everything we set out to do in a quarter in time for the release of the Adopt product at the annual Company Kick-Off event. We then consistently produced new features and developed highly efficient processes to run our team flat and lean. Some of those features include Workflows, recurring Workflows, completion over time charts for recurring and non-recurring Workflows, and segmentation by Workflows.</p>'
                 },
                 {
                     title: 'Senior Front End Engineer',
