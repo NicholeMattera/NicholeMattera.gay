@@ -2,12 +2,12 @@
   "author": "Nichole Mattera",
   "description": "Résumé for Nichole Mattera",
   "devDependencies": {
-    "axios": "^1.3.5",
-    "fast-xml-parser": "^4.1.4",
+    "axios": "^1.6.5",
+    "fast-xml-parser": "^4.3.3",
     "he": "^1.2.0",
-    "sharp": "^0.32.0",
-    "vite": "^4.0.4",
-    "vite-plugin-html": "^3.2.0"
+    "sharp": "^0.33.2",
+    "vite": "^5.0.12",
+    "vite-plugin-html": "^3.2.2"
   },
   "license": "ISC",
   "name": "nicholemattera.gay",
