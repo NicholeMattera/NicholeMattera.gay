@@ -1,8 +1,10 @@
-const axios = require('axios')
-const { XMLParser } = require("fast-xml-parser")
-const fs = require('fs')
-const fsPromises = require('fs/promises')
-const sharp = require('sharp')
+import axios from 'axios'
+import { fileURLToPath } from 'url';
+import fs from 'node:fs'
+import fsPromises from 'node:fs/promises'
+import path from 'path';
+import sharp from 'sharp'
+import { XMLParser } from 'fast-xml-parser'
 
 const overrides = {
   // Avatar: The Last Airbender - Imbalance, Part 1
@@ -181,6 +183,7 @@ async function fileExists (path) {
 
 async function downloadImage (name, url) {
   try {
+    const __dirname = path.dirname(fileURLToPath(import.meta.url));
     const fileName = name.toLowerCase().replaceAll(/[^a-zA-Z0-9]+/g, '-') + '.webp'
     const filePath = `${__dirname}/../public/images/book-covers/${fileName}`
     if (await fileExists(filePath)) return fileName
@@ -301,6 +304,7 @@ function sortBookshelf (bookshelf) {
 }
 
 function saveBookshelf (bookshelf) {
+  const __dirname = path.dirname(fileURLToPath(import.meta.url));
   return fsPromises.writeFile(`${__dirname}/../data/bookshelf.json`, JSON.stringify(bookshelf))
 }
 

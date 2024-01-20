@@ -17,8 +17,9 @@
   },
   "scripts": {
     "build": "npm run build:data && vite build",
-    "build:data": "node tools/buildBookshelf.js",
+    "build:data": "node scripts/buildBookshelf.js",
     "start": "npm run build:data && vite"
   },
+  "type": "module",
   "version": "1.2.0"
 }
