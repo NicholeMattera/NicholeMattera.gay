@@ -5,7 +5,7 @@ const data = {
   title: "Nichole &quot;Nickel&quot; Mattera",
   description: "Résumé for Nichole Mattera",
   about: {
-    image: "/images/nichole.webp",
+    image: "/images/nickel.webp 1x, /images/nickel@2x.webp 2x",
     imageAlt: "Selfie of Nichole Mattera",
     imageHeight: "256px",
     imageWidth: "192px",
@@ -22,7 +22,7 @@ const data = {
           title: "Staff Frontend Engineer",
           start: "2023-07",
           description:
-            "<p>I joined the Core Platform team, working to help build a solid foundation and support the feature teams.</p>",
+            "<p>I joined the Core Platform team to help build a solid foundation and support their feature teams. I have worked on and led the effort to update Nearpod's Component Library to match their internal design system. I also created a tool to query across their vast number of repositories to audit where things are being used. I've also worked on documenting processes and building an agreement with the team on how we work.</p>",
         },
       ],
     },

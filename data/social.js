@@ -4,8 +4,12 @@ export default {
     ...commonData,
     page: 'social',
     title: 'Nichole &quot;Nickel&quot; Mattera - Social Links',
-    description: 'Social Platforms that you can find Nichole on',
+    description: 'Social Platforms that you can find me on',
     links: [
+        {
+            "title": "Final Fantasy XIV",
+            "url": "https://na.finalfantasyxiv.com/lodestone/character/12012340/"
+        },
         {
             title: "GitHub",
             url: "https://github.com/NicholeMattera"
@@ -31,8 +35,24 @@ export default {
             url: "https://linkedin.com/in/nicholemattera"
         },
         {
-            title: "Mastadon",
-            url: "https://lgbtqia.space/@im_a_nickel"
+            title: "Mountain Project",
+            url: "https://www.mountainproject.com/user/201597317/nichole-mattera"
+        },
+        {
+            "title": "Reddit",
+            "url": "https://www.reddit.com/user/im_a_nickel"
+        },
+        {
+            "title": "Steam",
+            "url": "https://steamcommunity.com/id/im_a_nickel/"
+        },
+        {
+            "title": "Twitch",
+            "url": "https://www.twitch.tv/im_a_nickel"
+        },
+        {
+            "title": "YouTube",
+            "url": "https://www.youtube.com/@im.a.nickel"
         }
     ]
 }
