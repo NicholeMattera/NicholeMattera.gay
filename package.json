@@ -13,7 +13,7 @@
   "name": "nicholemattera.gay",
   "repository": {
     "type": "git",
-    "url": "git@git.nicholemattera.com:NicholeMattera/NicholeMattera.git"
+    "url": "git@github.com:NicholeMattera/NicholeMattera.gay.git"
   },
   "scripts": {
     "build": "npm run build:data && vite build",
