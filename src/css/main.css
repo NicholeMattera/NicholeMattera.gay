@@ -36,7 +36,7 @@ header .title {
 
 header .title.animating {
     animation: slide-right-title 1s linear forwards;
-    background-position: -147px 0;
+    background-position: -95px 0;
 }
 
 header .subtitle {
